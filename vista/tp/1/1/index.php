@@ -1,8 +1,8 @@
-<?php 
+<?php
 
 $titulo = 'TP1 - EJ1';
 
-include_once '../../2/vista/estructura/cabecera.php';
+include_once '../../../vista/estructura/cabecera.php';
 
 ?>
 
@@ -23,6 +23,6 @@ include_once '../../2/vista/estructura/cabecera.php';
 
 <?php
 
-include_once '../../2/vista/estructura/pie.php';
+include_once '../../../vista/estructura/pie.php';
 
 ?>

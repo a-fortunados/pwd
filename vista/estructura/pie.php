@@ -1,5 +1,5 @@
-    
-    
+
+
     <!-- </main> -->
     <footer class="py-3 bg-dark">
         <div class="container-footer">
@@ -7,9 +7,9 @@
         </div>
         <!-- <h1>Desarrollado por Cristhian Cantero</h1> -->
     </footer>
-    <script src="../../2/vista/js/bootstrap.bundle.min.js"></script>
-    <script src="../../2/vista/js/bootstrap.bundle.js"></script>
-    <script src="../../2/vista/js/bootstrap.min.js"></script>
-    
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
   </body>
 </html>
