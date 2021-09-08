@@ -2,30 +2,21 @@
 
 $titulo = 'TP1 - EJ6';
 
-include_once '../../../../estructura/cabecera_tp1.php';
+include_once '../../../estructura/cabecera_tp1.php';
+include '../../../../control/1/control_ej6.php';
+
+$control = new control_ej6();
+$texto = $control->armadoDatos($_POST);
+$cadena = $control->armadoCheckboxes($_POST);
 
 ?>
 <div class="container-main">
-<?php
+    <?php
 
-$nombre = $_POST['nombre'];
-$apellido = $_POST['apellido'];
-$edad = $_POST['edad'];
-$direccion = $_POST['direccion'];
+    echo "$texto<br>";
+    echo $cadena;
 
-$texto = "Hola yo soy " . $nombre . " " . $apellido . ", tengo " . $edad . " años y vivo en " . $direccion;
-echo "$texto<br>";
-
-if (isset($_POST['eje5'])) {
-    if (!empty($_POST['dep'])) {
-        echo "Deporte(s) que practico: <br>";
-        foreach ($_POST['dep'] as $value) {
-            echo "$value<br>";
-        }
-    }
-}
-
-?>
+    ?>
 </div>
 <?php
 

@@ -1,28 +1,22 @@
 <?php
-
 $titulo = 'TP1 - EJ8';
 
 include_once '../../../estructura/cabecera_tp1.php';
+include '../../../../control/1/control_ej8.php';
 
+$control = new control_ej8();
+$precio = $control->calcularPrecio($_GET);
 ?>
+
 <div class="container-main">
-<?php
 
-$edad = $_GET['edad'];
-$estudiante = $_GET['estudiante'];
+    <?php
 
-if ($edad < 12 && $estudiante == 'si') {
-    $precio = 160;
-} else if ($edad >= 12 && $estudiante == 'si') {
-    $precio = 180;
-}else {
-    $precio = 300;
-}
+    echo "El precio es de: $" . $precio;
 
-echo "El precio es de: $".$precio;
+    ?>
 
-?>
 </div>
-<?php
 
+<?php
 include_once '../../../estructura/pie.php';
