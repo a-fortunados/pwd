@@ -1,30 +1,18 @@
 <?php
-
+$titulo = "TP1 - EJ1";
 include_once '../../../estructura/cabecera_tp1.php';
+include '../../../../control/1/control_ej1.php';
 
+$control = new control_ej1();
+$texto = $control->readNumber($_GET);
 ?>
+
 <div class="container-main">
-<?php
-if ($_GET) {
-    $enteredNumber = $_GET['enteredNumber'];
-
-    if ($enteredNumber > 0) {
-        echo "<span>$enteredNumber es <B>positivo</B>.</span><br />";
-        echo "<a href='http://localhost/pwd/TP/1/1/'>Consultar otro número</a><br />";
-        
-    } elseif ($enteredNumber < 0) {
-        echo "<span>$enteredNumber es <B>negativo</B>.</span><br />";
-        echo "<a href='http://localhost/pwd/TP/1/1/'>Consultar otro número</a><br />";
-    } else {
-        echo "<span>0 es <B>neutro</B>.</span><br />";
-        echo "<a href='http://localhost/pwd/TP/1/1/'>Consultar otro número</a><br />";
-    }
-} else {
-    echo "<h2>No se recibieron datos!</h2><br />";
-    echo "<a href='http://localhost/pwd/TP/1/1/'>Volver</a>";
-}
-?>
+    <?php
+    echo "<p>$texto</p>";
+    echo "<a href='index.php'>Consultar otro número</a><br/>";
+    ?>
 </div>
-<?php
 
+<?php
 include_once '../../../estructura/pie.php';
