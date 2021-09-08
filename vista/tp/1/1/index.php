@@ -2,7 +2,7 @@
 
 $titulo = 'TP1 - EJ1';
 
-include_once '../../../vista/estructura/cabecera.php';
+include_once '../../../estructura/cabecera_tp1.php';
 
 ?>
 
@@ -23,6 +23,6 @@ include_once '../../../vista/estructura/cabecera.php';
 
 <?php
 
-include_once '../../../vista/estructura/pie.php';
+include_once '../../../estructura/pie.php';
 
 ?>
