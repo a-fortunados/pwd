@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $titulo = 'TP1 - EJ2';
 
