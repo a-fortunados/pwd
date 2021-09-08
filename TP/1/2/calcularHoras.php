@@ -1,5 +1,13 @@
 <?php
 
+$titulo = 'TP1 - EJ2';
+
+include_once '../../2/vista/estructura/cabecera.php';
+
+?>
+<div class="container-main">
+<?php
+
 $i = 0;
 $j = 0;
 $sumaHoras = 0;
@@ -54,3 +62,9 @@ function calcularDiferencia($ini, $fin)
     $horas = $resta / 60;
     return $horas;
 }
+
+?>
+</div>
+<?php
+
+include_once '../../2/vista/estructura/pie.php';

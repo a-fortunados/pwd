@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="vista/css/bootstrap.min.css">
-    <link rel="stylesheet" href="vista/css/styles.css">
+    <link rel="stylesheet" href="../../2/vista/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../2/vista/css/styles.css">
 
-    <title><?php $titulo ?></title>
+    <title><?php echo $titulo; ?></title>
   </head>
   <body>
     <header>
@@ -36,14 +36,14 @@
                     Trabajo Practico 1
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li><a class="dropdown-item" href="#">Ejercicio1</a></li>
-                    <li><a class="dropdown-item" href="#">Ejercicio2</a></li>
-                    <li><a class="dropdown-item" href="#">Ejercicio3</a></li>
-                    <li><a class="dropdown-item" href="#">Ejercicio4</a></li>
-                    <li><a class="dropdown-item" href="#">Ejercicio5</a></li>
-                    <li><a class="dropdown-item" href="#">Ejercicio6</a></li>
-                    <li><a class="dropdown-item" href="#">Ejercicio7</a></li>
-                    <li><a class="dropdown-item" href="#">Ejercicio8</a></li>
+                    <li><a class="dropdown-item" href="../../1/1/index.php">Ejercicio1</a></li>
+                    <li><a class="dropdown-item" href="../../1/2/index.php">Ejercicio2</a></li>
+                    <li><a class="dropdown-item" href="../../1/3/index.php">Ejercicio3</a></li>
+                    <li><a class="dropdown-item" href="../../1/4/index.php">Ejercicio4</a></li>
+                    <li><a class="dropdown-item" href="../../1/5/index.php">Ejercicio5</a></li>
+                    <li><a class="dropdown-item" href="../../1/6/index.php">Ejercicio6</a></li>
+                    <li><a class="dropdown-item" href="../../1/7/index.php">Ejercicio7</a></li>
+                    <li><a class="dropdown-item" href="../../1/8/index.php">Ejercicio8</a></li>
                 </ul>
                 </li>
                 <li class="nav-item dropdown">
