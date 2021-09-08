@@ -5,9 +5,9 @@
     </div>
     <!-- <h1>Desarrollado por Cristhian Cantero</h1> -->
 </footer>
-<script src="../../../js/bootstrap.bundle.min.js"></script>
-<script src="../../../js/bootstrap.bundle.js"></script>
-<script src="../../../js/bootstrap.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </body>
 

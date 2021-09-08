@@ -1,6 +1,6 @@
 <?php
 
-include_once '../../2/vista/estructura/cabecera.php';
+include_once '../../../estructura/cabecera_tp1.php';
 
 ?>
 <div class="container-main">
@@ -27,4 +27,4 @@ if ($_GET) {
 </div>
 <?php
 
-include_once '../../2/vista/estructura/pie.php';
+include_once '../../../estructura/pie.php';

@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -8,9 +8,9 @@
 
     <!-- Bootstrap CSS -->
     <!-- <link rel="stylesheet" href="../../2/vista/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="../../2/vista/css/styles.css"> -->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="../../../css/styles.css">
 
     <title><?php echo $titulo; ?></title>
 </head>
@@ -30,33 +30,33 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Practico 1</a>
 
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="../1/1/index.php">Ejercicio1</a></li>
-                                <li><a class="dropdown-item" href="../../1/2/index.php">Ejercicio2</a></li>
-                                <li><a class="dropdown-item" href="../../1/3/index.php">Ejercicio3</a></li>
-                                <li><a class="dropdown-item" href="../../1/4/index.php">Ejercicio4</a></li>
-                                <li><a class="dropdown-item" href="../../1/5/index.php">Ejercicio5</a></li>
-                                <li><a class="dropdown-item" href="../../1/6/index.php">Ejercicio6</a></li>
-                                <li><a class="dropdown-item" href="../../1/7/index.php">Ejercicio7</a></li>
-                                <li><a class="dropdown-item" href="../../1/8/index.php">Ejercicio8</a></li>
+                                <li><a class="dropdown-item" href="../1">Ejercicio1</a></li>
+                                <li><a class="dropdown-item" href="../2">Ejercicio2</a></li>
+                                <li><a class="dropdown-item" href="../3">Ejercicio3</a></li>
+                                <li><a class="dropdown-item" href="../4">Ejercicio4</a></li>
+                                <li><a class="dropdown-item" href="../5">Ejercicio5</a></li>
+                                <li><a class="dropdown-item" href="../6">Ejercicio6</a></li>
+                                <li><a class="dropdown-item" href="../7">Ejercicio7</a></li>
+                                <li><a class="dropdown-item" href="../8">Ejercicio8</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Practico 2</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Ejercicio1</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio2</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio3</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio4</a></li>
+                                <li><a class="dropdown-item" href="../../2/1">Ejercicio1</a></li>
+                                <li><a class="dropdown-item" href="../../2/2">Ejercicio2</a></li>
+                                <li><a class="dropdown-item" href="../../2/3">Ejercicio3</a></li>
+                                <li><a class="dropdown-item" href="../../2/4">Ejercicio4</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Practico 3</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Ejercicio1</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio2</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio3</a></li>
+                                <li><a class="dropdown-item" href="../../3/1">Ejercicio1</a></li>
+                                <li><a class="dropdown-item" href="../../3/2">Ejercicio2</a></li>
+                                <li><a class="dropdown-item" href="../../3/3">Ejercicio3</a></li>
                             </ul>
                         </li>
                     </ul>

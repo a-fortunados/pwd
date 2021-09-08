@@ -1,4 +1,4 @@
 <?php
 
-header('Location: TP/vista/index.php');
+header('Location: vista/index.php');
 exit;

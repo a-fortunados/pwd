@@ -2,7 +2,7 @@
 
 $titulo = 'TP1 - EJ8';
 
-include_once '../../2/vista/estructura/cabecera.php';
+include_once '../../../estructura/cabecera_tp1.php';
 
 ?>
 <div class="container-main">
@@ -25,4 +25,4 @@ echo "El precio es de: $".$precio;
 </div>
 <?php
 
-include_once '../../2/vista/estructura/pie.php';
+include_once '../../../estructura/pie.php';

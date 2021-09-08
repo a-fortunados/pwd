@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -30,7 +30,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Practico 1</a>
 
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="../1/1/index.php">Ejercicio1</a></li>
+                                <li><a class="dropdown-item" href="tp/1/1/index.php">Ejercicio1</a></li>
                                 <li><a class="dropdown-item" href="../../1/2/index.php">Ejercicio2</a></li>
                                 <li><a class="dropdown-item" href="../../1/3/index.php">Ejercicio3</a></li>
                                 <li><a class="dropdown-item" href="../../1/4/index.php">Ejercicio4</a></li>
