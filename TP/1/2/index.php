@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Horarios PWD</title>
-</head>
+$titulo = 'TP1 - EJ2';
 
-<body>
+include_once '../../2/vista/estructura/cabecera.php';
+
+?>
+<div class="container-main">
     <form id="form1" name="form1" method="GET" action="calcularHoras.php">
         <h4>Horas de cursada para Programación Web Dinámica</h4>
         <table>
@@ -57,6 +54,10 @@
             </tr>
         </table>
     </form>
-</body>
+</div>
 
-</html>
+<?php
+
+include_once '../../2/vista/estructura/pie.php';
+
+?>

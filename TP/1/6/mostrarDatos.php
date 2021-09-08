@@ -1,5 +1,13 @@
 <?php
 
+$titulo = 'TP1 - EJ6';
+
+include_once '../../2/vista/estructura/cabecera.php';
+
+?>
+<div class="container-main">
+<?php
+
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $edad = $_POST['edad'];
@@ -16,3 +24,9 @@ if (isset($_POST['eje5'])) {
         }
     }
 }
+
+?>
+</div>
+<?php
+
+include_once '../../2/vista/estructura/pie.php';

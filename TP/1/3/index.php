@@ -1,24 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-</head>
+$titulo = 'TP1 - EJ3';
 
-<body>
+include_once '../../2/vista/estructura/cabecera.php';
+
+?>
+<div class="container-main">
     <div>
-        <form id="form4" name="form4" method="get" action="edad.php">
+        <form id="form3" name="form3" method="post" action="mostrarDatos.php">
             <p>Nombre: <input type="text" name="nombre" size="100" placeholder="Escriba su nombre completo"></p>
             <p>Apellido: <input type="text" name="apellido" size="100" placeholder="Escriba todos sus apellidos"></p>
             <p>Edad: <input type="number" name="edad" min="1" placeholder="Escriba su edad, debe ser mayor a 1"></p>
             <p>Dirección: <textarea name="direccion" id="direccion" rows="2" cols="100" placeholder="Escriba su direccion completa"></textarea></p>
 
-            <input id="eje4" name="eje4" type="submit" value="Enviar">
+            <input id="eje3" name="eje3" type="submit" value="Enviar">
         </form>
     </div>
-</body>
+    </div>
 
-</html>
+<?php
+
+include_once '../../2/vista/estructura/pie.php';
+
+?>

@@ -1,5 +1,13 @@
 <?php
 
+$titulo = 'TP1 - EJ4';
+
+include_once '../../2/vista/estructura/cabecera.php';
+
+?>
+<div class="container-main">
+<?php
+
 $nombre = $_GET['nombre'];
 $apellido = $_GET['apellido'];
 $edad = $_GET['edad'];
@@ -12,3 +20,9 @@ if ($edad >=18) {
 }
 
 echo $texto;
+
+?>
+</div>
+<?php
+
+include_once '../../2/vista/estructura/pie.php';

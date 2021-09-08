@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php 
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cine Cinem@s</title>
-</head>
+$titulo = 'TP1 - EJ8';
 
-<body>
+include_once '../../2/vista/estructura/cabecera.php';
+
+?>
+<div class="container-main">
     <form id="form8" name="form8" method="get" action="calculo.php">
         <p>Ingrese su edad: <input type="number" name="edad"></p>
         <p>Es estudiante:
@@ -20,6 +17,10 @@
 
         <input id="eje8" name="eje8" type="submit" value="Enviar">
     </form>
-</body>
+</div>
 
-</html>
+<?php
+
+include_once '../../2/vista/estructura/pie.php';
+
+?>
