@@ -1,19 +1,25 @@
-.container-main{
+body {
+    height: auto;
+}
+
+.container-main {
+    height: auto;
     width: 100%;
     align-items: center;
     /* background-color: aquamarine; */
     padding: 40px;
 }
 
-footer{
-    position: absolute;
-    bottom: 0;
+footer {
+    position: relative;
+    margin-bottom: 0;
+    /* bottom: 0;*/
     width: 100%;
     /* font-size: 12px; */
     text-align: center;
 }
 
-.container-footer{
+.container-footer {
     color: beige;
     font-size: 2vh;
 }
