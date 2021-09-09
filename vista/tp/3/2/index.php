@@ -6,16 +6,16 @@ include_once '../../../estructura/cabecera_tp3.php';
 <div class="container-main">
     <div class="row">
         <div class="col">
+            <h3>Subir archivos tipo .txt</h3>
             <form class="needs-validation" novalidate action="mostrarContenido.php" method="post" enctype="multipart/form-data" name="formulario1">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="archivo">Seleccione un archivo</label>
                         <input type="file" name="archivo" id="archivo" accept=".txt" required>
-                        <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Campo incompleto</div>
+                        <div class="invalid-feedback">Por favor, subir un archivo!</div>
                     </div>
                 </div>
-                <input class="btn-primary bt-3" type="submit" value="Enviar">
+                <button class="btn-primary bt-3" type="submit">Enviar</button>
             </form>
         </div>
     </div>

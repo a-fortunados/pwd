@@ -25,7 +25,7 @@ include_once '../../../estructura/cabecera_tp1.php';
 
             <div class="col-md-4 mb-3">
                 <label for="edad" class="form-label">Edad</label>
-                <input type="number" min="1" class="form-control" id="edad" placeholder="Escriba su edad" required>
+                <input type="number" min="1" class="form-control" id="edad" placeholder="Ingrese su edad" required>
                 <div class="valid-feedback">Campo completo</div>
                 <div class="invalid-feedback">Por favor, ingrese su edad!</div>
             </div>

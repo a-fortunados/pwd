@@ -31,7 +31,7 @@ include_once '../../../estructura/cabecera_tp1.php';
                     <option value="RESTA">RESTA</option>
                     <option value="MULTIPLICACION">MULTIPLICACIÓN</option>
                 </select>
-                <div class="invalid-feedback">Por favor, seleccione de una operación!</div>
+                <div class="invalid-feedback">Por favor, seleccione una operación!</div>
             </div>
 
             <div class="col-md-12 mb-3">
