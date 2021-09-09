@@ -16,8 +16,8 @@ include_once '../../../estructura/cabecera_tp1.php';
 
             <div class="col-md-4">
                 <label for="estudiante">¿Es estudiante?</label>
-                <input type="radio" class="form-check-input" name="estudiante" value="si">Sí
-                <input type="radio" class="form-check-input" name="estudiante" value="no">No
+                <input type="radio" class="form-check-input" name="estudiante" value="si" required>Sí
+                <input type="radio" class="form-check-input" name="estudiante" value="no" required>No
                 <div class="invalid-feedback">Por favor, seleccione una opción!</div>
             </div>
 
@@ -51,6 +51,10 @@ include_once '../../../estructura/cabecera_tp1.php';
         <input id="eje8" name="eje8" type="submit" value="Enviar">
     </form> -->
 </div>
+
+<script>
+    validacion();
+</script>
 
 <?php
 

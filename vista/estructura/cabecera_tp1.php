@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
     <!-- <link rel="stylesheet" href="../../2/vista/css/styles.css"> -->
     <link rel="stylesheet" href="../../../css/styles.css">
+    <script src="../../../js/validacion.js" type="text/javascript"></script>
 
     <title><?php echo $titulo; ?></title>
 </head>
@@ -44,8 +45,6 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Practico 2</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="../../2/1">Ejercicio 1</a></li>
-                                <li><a class="dropdown-item" href="../../2/2">Ejercicio 2</a></li>
                                 <li><a class="dropdown-item" href="../../2/3">Ejercicio 3</a></li>
                                 <li><a class="dropdown-item" href="../../2/4">Ejercicio 4</a></li>
                             </ul>
