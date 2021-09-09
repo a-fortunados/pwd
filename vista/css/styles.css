@@ -1,25 +1,17 @@
 body {
-    height: auto;
+  height: auto;
 }
 
 .container-main {
-    height: auto;
-    width: 100%;
-    align-items: center;
-    /* background-color: aquamarine; */
-    padding: 40px;
+  height: auto;
+  width: 90%;
+  align-items: center;
+  /* background-color: aquamarine; */
+  padding: 40px;
 }
 
-footer {
-    position: relative;
-    margin-bottom: 0;
-    /* bottom: 0;*/
-    width: 100%;
-    /* font-size: 12px; */
-    text-align: center;
-}
-
-.container-footer {
-    color: beige;
-    font-size: 2vh;
+footer a {
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
 }

@@ -22,16 +22,16 @@ $img = $control->cargarImagen($_FILES);
             <h1 class="text-primary">La película introducida es</h1>
             <p class="text-success">
                 <?php
-                echo $texto;
-                ?>
+echo $texto;
+?>
             </p>
         </div>
     </div>
     <div class="col-md-6">
 
         <?php
-        echo $img;
-        ?>
+echo $img;
+?>
 
     </div>
 </div>
