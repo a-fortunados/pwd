@@ -18,16 +18,16 @@ class control_ej4
         if ($datosImg['poster']['error'] <= 0) {
             $nombre = $datosImg['poster']['name'];
             $dir = '../../../archivos/';
-            $exito = true;
+            $exito = false;
 
             if (!copy($datosImg['poster']['tmp_name'], $dir . $datosImg['poster']['name'])) {
-                echo "ERROR: No se pudo cargar el archivo";
+                $retorno = "ERROR: No se pudo cargar el archivo";
             } else {
                 $exito = true;
-                echo "El archivo: " . $datosImg['poster']['name'] . " se ha copiado con exito <br/>";
+                $retorno = "El archivo: " . $datosImg['poster']['name'] . " se ha copiado con exito <br/>";
             }
         } else {
-            echo "ERROR: No se pudo cargar el archivo. No se pudo acceder al archivo Temporal";
+            $retorno = "ERROR: No se pudo cargar el archivo. No se pudo acceder al archivo Temporal";
         }
 
         if ($exito) {

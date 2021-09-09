@@ -31,17 +31,24 @@ class control_ej2
                 $i++;
             }
         }
-        $this->mostrarDatos($coleccionHorarios, $sumaHoras);
+        $retorno = $this->mostrarDatos($coleccionHorarios, $sumaHoras);
+
+        return $retorno;
     }
 
     public function mostrarDatos($coleccionHorarios, $sumaHoras)
     {
+        $texto = "";
+
         $dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
+
         for ($i = 0; $i < count($coleccionHorarios); $i++) {
-            echo $dias[$i] . ": " . $coleccionHorarios[$i] . "<br>";
+            $texto .= $dias[$i] . ": " . $coleccionHorarios[$i] . "<br>";
         }
 
-        echo "<h1>HORAS TOTALES: $sumaHoras</h1>";
+        $texto .= "<h1>HORAS TOTALES: $sumaHoras</h1>";
+
+        return $texto;
     }
 
     public function stringToTime($array)

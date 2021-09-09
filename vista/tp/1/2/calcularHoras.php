@@ -9,8 +9,8 @@ $control = new control_ej2();
 <div class="container-main">
 
     <?php
-    $control->recorrerYArmarArray($_GET);
-    ?>
+echo $control->recorrerYArmarArray($_GET);
+?>
 
 </div>
 
