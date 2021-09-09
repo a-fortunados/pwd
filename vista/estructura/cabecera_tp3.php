@@ -53,7 +53,6 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="../1">Ejercicio 1</a></li>
                                 <li><a class="dropdown-item" href="../2">Ejercicio 2</a></li>
-                                <li><a class="dropdown-item" href="../3">Ejercicio 3</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -21,10 +21,6 @@ include_once '../../../estructura/cabecera_tp3.php';
     </div>
 </div>
 
-<script>
-    validacion();
-</script>
-
 <?php
 include_once '../../../estructura/pie.php';
 ?>

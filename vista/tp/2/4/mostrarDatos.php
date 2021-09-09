@@ -5,10 +5,11 @@ include '../../../../control/2/control_ej4.php';
 
 $control = new control_ej4();
 $texto = $control->crearTexto($_POST);
+$img = $control->cargarImagen($_FILES);
 ?>
 
 <div class="container-main">
-    <div class="card bg-light bg-gradient rounded-3">
+    <div class="card bg-light bg-gradient rounded-3 col-md-6">
         <div class="card-header border-0" style="height: 30px;">
             <a href="../4" class="position-absolute top-0 end-0">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
@@ -25,6 +26,13 @@ $texto = $control->crearTexto($_POST);
                 ?>
             </p>
         </div>
+    </div>
+    <div class="col-md-6">
+
+        <?php
+        echo $img;
+        ?>
+
     </div>
 </div>
 

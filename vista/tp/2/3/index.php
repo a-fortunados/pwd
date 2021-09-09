@@ -1,6 +1,6 @@
 <?php
 $titulo = "TP2 - EJ3";
-include_once '../../../estructura/cabecera_tp3.php';
+include_once '../../../estructura/cabecera_tp2.php';
 ?>
 <div class="container-main text-center">
     <h2>Member Login</h2>
@@ -31,10 +31,6 @@ include_once '../../../estructura/cabecera_tp3.php';
         </div>
     </form>
 </div>
-
-<script>
-    validacion();
-</script>
 
 <?php
 include_once '../../../estructura/pie.php';
