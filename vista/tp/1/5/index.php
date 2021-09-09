@@ -65,10 +65,6 @@ include_once '../../../estructura/cabecera_tp1.php';
             </div>
         </form>
     </div>
-
-    <script>
-        validacion();
-    </script>
 </div>
 
 <?php

@@ -32,9 +32,5 @@ include_once '../../../estructura/cabecera_tp2.php';
     </form>
 </div>
 
-<script>
-    validacion();
-</script>
-
 <?php
 include_once '../../../estructura/pie.php';

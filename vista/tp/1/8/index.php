@@ -25,37 +25,11 @@ include_once '../../../estructura/cabecera_tp1.php';
             </div>
 
             <div class="col-md-12 mb-3">
-                <!-- FIX: no muestra resultados -->
                 <button class="btn btn-primary" type="submit">Enviar</button>
             </div>
         </form>
     </div>
-
-    <!-- <form id="form8" name="form8" method="get" action="calculo.php">
-        <table>
-            <tr>
-                <td>Ingrese se edad:&nbsp;</td>
-                <td><input type="number" name="edad"></td>
-            </tr>
-
-            <tr>
-                <td>¿Es estudiante?&nbsp;</td>
-                <td>
-                    <ul>
-                        <li><input type="radio" name="estudiante" value="si">Sí</li>
-                        <li><input type="radio" name="estudiante" value="no">No</li>
-                    </ul>
-                </td>
-            </tr>
-        </table>
-
-        <input id="eje8" name="eje8" type="submit" value="Enviar">
-    </form> -->
 </div>
-
-<script>
-    validacion();
-</script>
 
 <?php
 

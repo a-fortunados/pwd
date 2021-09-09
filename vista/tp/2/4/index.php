@@ -15,7 +15,7 @@ include_once '../../../estructura/cabecera_tp2.php';
         </div>
 
         <div class="card-body">
-            <form class="needs-validation" novalidate name="form-ej3" action="mostrarDatos.php" method="post">
+            <form class="needs-validation" enctype="multipart/form-data" novalidate name="form-ej3" action="mostrarDatos.php" method="post">
                 <div class="row">
                     <div class="col-md-6 mb-2">
                         <label for="Titulo" class="mb-2"><B>Título</B></label>
@@ -113,6 +113,12 @@ include_once '../../../estructura/cabecera_tp2.php';
                     <textarea name="sinopsis" id="sinopsis" rows="4" required></textarea>
                 </div>
 
+                <div class="row">
+                    <label for="poster" class="mb-2"><b>Póster</b></label>
+                    <input type="file" class="form-control" name="poster" id="poster" accept="image/*" required>
+                    <div class="invalid-feedback">Por favor, seleccione una imágen</div>
+                </div>
+
                 <div class="row mt-4">
                     <div class="col-md-10">
                     </div>
@@ -130,9 +136,6 @@ include_once '../../../estructura/cabecera_tp2.php';
     </div>
 </div>
 
-<script>
-    validacion();
-</script>
-
 <?php
 include_once '../../../estructura/pie.php';
+?>

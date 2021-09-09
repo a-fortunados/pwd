@@ -12,4 +12,28 @@ class control_ej4
         }
         return $texto;
     }
+
+    public function cargarImagen($datosImg)
+    {
+        if ($datosImg['poster']['error'] <= 0) {
+            $nombre = $datosImg['poster']['name'];
+            $dir = '../../../archivos/';
+            $exito = true;
+
+            if (!copy($datosImg['poster']['tmp_name'], $dir . $datosImg['poster']['name'])) {
+                echo "ERROR: No se pudo cargar el archivo";
+            } else {
+                $exito = true;
+                echo "El archivo: " . $datosImg['poster']['name'] . " se ha copiado con exito <br/>";
+            }
+        } else {
+            echo "ERROR: No se pudo cargar el archivo. No se pudo acceder al archivo Temporal";
+        }
+
+        if ($exito) {
+            $dir .= $nombre;
+            $retorno = "<img alt=$nombre src='$dir'>";
+        }
+        return $retorno;
+    }
 }

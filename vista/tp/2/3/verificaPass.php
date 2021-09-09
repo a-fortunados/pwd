@@ -1,7 +1,7 @@
 <?php
 $titulo = "TP2 - EJ3";
 include '../../../../control/2/control_ej3.php';
-include_once '../../../estructura/cabecera_tp3.php';
+include_once '../../../estructura/cabecera_tp2.php';
 $arrayUsers = [
     0 => [
         "username" => "Juan",
