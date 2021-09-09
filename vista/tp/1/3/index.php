@@ -6,35 +6,62 @@ include_once '../../../estructura/cabecera_tp1.php';
 
 ?>
 <div class="container-main">
-    <div>
+    <div class="row">
+        <div class="col">
+            <form class="row g-3 needs-validation" novalidate id="form3" name="form3" method="post" action="mostrarDatos.php">
+                <div>
+                    <label for="nombre" class="form-label">Nombre</label>
+                    <input type="text" name="nombre" size="50" placeholder="Escriba su nombre completo" class="form-control" required>
+                    <div class="valid-feedback">Campo completo</div>
+                    <div class="invalid-feedback">Complete los datos</div>
+                </div>
+                <div>
+                    <label for="apellido" class="form-label">Apellido</label>
+                    <input type="text" name="apellido" size="50" placeholder="Escriba todos sus apellidos" class="form-control" required>
+                    <div class="valid-feedback">Campo completo</div>
+                    <div class="invalid-feedback">Complete los datos</div>
+                </div>
+                <div>
+                    <label for="edad" class="form-label">Edad</label>
+                    <input type="number" name="edad" size="50" min="1" placeholder="Escriba su edad" class="form-control" required>
+                    <div class="valid-feedback">Campo completo</div>
+                    <div class="invalid-feedback">Complete los datos</div>
+                </div>
+                <div>
+                    <label for="direccion" class="form-label">Dirección</label>
+                    <input name="direccion" id="direccion" size="50" placeholder="Escriba su dirección completa" class="form-control" required>
+                    <div class="valid-feedback">Campo completo</div>
+                    <div class="invalid-feedback">Complete los datos</div>
+                </div>
 
-        <form id="form3" name="form3" method="post" action="mostrarDatos.php">
-            <table>
-                <tr>
-                    <td>Nombre:&nbsp;</td>
-                    <td><input type="text" name="nombre" size="50" placeholder="Escriba su nombre completo"></td>
-                </tr>
-
-                <tr>
-                    <td>Apellido:&nbsp;</td>
-                    <td><input type="text" name="apellido" size="50" placeholder="Escriba todos sus apellidos"></td>
-                </tr>
-
-                <tr>
-                    <td>Edad:&nbsp;</td>
-                    <td><input type="number" name="edad" size="50" min="1" placeholder="Escriba su edad, debe ser mayor a 1"></td>
-                </tr>
-
-                <tr>
-                    <td>Dirección:&nbsp;</td>
-                    <td><input name="direccion" id="direccion" size="50" placeholder="Escriba su direccion completa"></td>
-                </tr>
-            </table>
-
-            <input id="eje3" name="eje3" type="submit" value="Enviar">
-        </form>
+                <input class="btn btn-warning" id="eje3" name="eje3" type="submit" value="Enviar">
+            </form>
+        </div>
     </div>
-    </div>
+</div>
+
+<script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function(form) {
+                form.addEventListener('submit', function(event) {
+                    if (!form.checkValidity()) {
+                        event.preventDefault()
+                        event.stopPropagation()
+                    }
+
+                    form.classList.add('was-validated')
+                }, false)
+            })
+    })()
+</script>
 
 <?php
 
