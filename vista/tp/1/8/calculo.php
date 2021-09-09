@@ -5,16 +5,16 @@ include_once '../../../estructura/cabecera_tp1.php';
 include '../../../../control/1/control_ej8.php';
 
 $control = new control_ej8();
-$precio = $control->calcularPrecio($_GET);
+$precio = $control->calcularPrecio($_POST);
 ?>
 
 <div class="container-main">
 
     <?php
 
-    echo "El precio es de: $" . $precio;
+echo "El precio es de: $" . $precio;
 
-    ?>
+?>
 
 </div>
 

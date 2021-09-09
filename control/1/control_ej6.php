@@ -19,6 +19,8 @@ class control_ej6
                 foreach ($array['dep'] as $value) {
                     $cadena .= "<li>$value</li>";
                 }
+            } else {
+                $cadena = "No practico deportes.";
             }
         }
         return $cadena;

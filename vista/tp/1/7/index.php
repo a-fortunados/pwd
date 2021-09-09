@@ -6,32 +6,61 @@ include_once '../../../estructura/cabecera_tp1.php';
 
 ?>
 <div class="container-main">
-    <form id="form7" name="form7" method="get" action="operacion.php">
-        <table>
-            <tr>
-                <td>Ingrese un número:&nbsp;</td>
-                <td><input type="text" name="number1"></td>
-            </tr>
+    <div>
+        <form id="form5" name="form5" method="post" action="mostrarDatos.php" class="mb-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="number1" class="form-label">Número 1</label>
+                <input type="number" class="form-control" id="number1" required>
+                <div class="invalid-feedback">Por favor, ingrese un número!</div>
+            </div>
 
-            <tr>
-                <td>Ingrese otro número:&nbsp;</td>
-                <td><input type="text" name="number2"></td>
-            </tr>
+            <div class="col-md-4">
+                <label for="number2" class="form-label">Número 2</label>
+                <input type="number" class="form-control" id="number2" required>
+                <div class="invalid-feedback">Por favor, ingrese un número!</div>
+            </div>
 
-            <tr>
-                <td>Elija una operación:&nbsp;</td>
-                <td>
-                    <select name="opcion">
-                        <option value="SUMA">SUMA</option>
-                        <option value="RESTA">RESTA</option>
-                        <option value="MULTIPLICACION">MULTIPLICACIÓN</optionvalue>
-                    </select>
-                </td>
-            </tr>
-        </table>
+            <div class="col-md-3">
+                <label for="operacion" class="form-label">Operación</label>
+                <select class="form-select" id="operacion" required>
+                    <option selected disabled value="">Seleccione...</option>
+                    <option value="SUMA">SUMA</option>
+                    <option value="RESTA">RESTA</option>
+                    <option value="MULTIPLICACION">MULTIPLICACION</option>
+                </select>
+                <div class="invalid-feedback">Por favor, seleccione de una operación!</div>
+            </div>
 
-        <input id="eje7" name="eje7" type="submit" value="Calcular">
-    </form>
+            <br>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
 </div>
 
 <?php
