@@ -37,7 +37,7 @@ class control_ej2
     public function mostrarDatos($coleccionHorarios, $sumaHoras)
     {
         $dias = ["Lunes", "Martes", "Miercoles", "Jueves", "Viernes"];
-        for ($i = 0; $i < count($coleccionHorarios) - 1; $i++) {
+        for ($i = 0; $i < count($coleccionHorarios); $i++) {
             echo $dias[$i] . ": " . $coleccionHorarios[$i] . "<br>";
         }
 

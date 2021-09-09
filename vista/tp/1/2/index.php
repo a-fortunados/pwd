@@ -14,7 +14,7 @@ include_once '../../../estructura/cabecera_tp1.php';
                     <h5>Lunes</h5>
                     <div class="col-md-4">
                         <label for="horaInicio" class="form-label">Hora Inicio</label>
-                        <input type="time" id="horaInicioLunes" name="horaInicioLunes" min="08:00" max="22:00" class="form-control" required>
+                        <input type="time" id="horaInicioLunes" name="horaInicioLunes" min="08:00" max="00:00" class="form-control" required>
                         <div class="valid-feedback">Campo Completo</div>
                         <div class="invalid-feedback">Por favor, ingrese el horario!</div>
                     </div>
@@ -30,7 +30,7 @@ include_once '../../../estructura/cabecera_tp1.php';
                     <h5>Martes</h5>
                     <div class="col-md-4">
                         <label for="horaInicio" class="form-label">Hora Inicio</label>
-                        <input type="time" id="horaInicioMartes" name="horaInicioMartes" min="08:00" max="22:00" class="form-control" required>
+                        <input type="time" id="horaInicioMartes" name="horaInicioMartes" min="08:00" max="00:00" class="form-control" required>
                         <div class="valid-feedback">Campo Completo</div>
                         <div class="invalid-feedback">Por favor, ingrese el horario!</div>
                     </div>
@@ -46,7 +46,7 @@ include_once '../../../estructura/cabecera_tp1.php';
                     <h5>Miércoles</h5>
                     <div class="col-md-4">
                         <label for="horaInicio" class="form-label">Hora Inicio</label>
-                        <input type="time" id="horaInicioMiercoles" name="horaInicioMiercoles" min="08:00" max="22:00" class="form-control" required>
+                        <input type="time" id="horaInicioMiercoles" name="horaInicioMiercoles" min="08:00" max="00:00" class="form-control" required>
                         <div class="valid-feedback">Campo Completo</div>
                         <div class="invalid-feedback">Por favor, ingrese el horario!</div>
                     </div>
@@ -61,7 +61,7 @@ include_once '../../../estructura/cabecera_tp1.php';
                     <h5>Jueves</h5>
                     <div class="col-md-4">
                         <label for="horaInicio" class="form-label">Hora Inicio</label>
-                        <input type="time" id="horaInicioJueves" name="horaInicioJueves" min="08:00" max="22:00" class="form-control" required>
+                        <input type="time" id="horaInicioJueves" name="horaInicioJueves" min="08:00" max="00:00" class="form-control" required>
                         <div class="valid-feedback">Campo Completo</div>
                         <div class="invalid-feedback">Por favor, ingrese el horario!</div>
                     </div>
@@ -76,7 +76,7 @@ include_once '../../../estructura/cabecera_tp1.php';
                     <h5>Viernes</h5>
                     <div class="col-md-4">
                         <label for="horaInicio" class="form-label">Hora Inicio</label>
-                        <input type="time" id="horaInicioViernes" name="horaInicioViernes" min="08:00" max="22:00" class="form-control" required>
+                        <input type="time" id="horaInicioViernes" name="horaInicioViernes" min="08:00" max="00:00" class="form-control" required>
                         <div class="valid-feedback">Campo Completo</div>
                         <div class="invalid-feedback">Por favor, ingrese el horario!</div>
                     </div>
