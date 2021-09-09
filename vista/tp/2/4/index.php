@@ -21,14 +21,14 @@ include_once '../../../estructura/cabecera_tp2.php';
                         <label for="Titulo" class="mb-2"><B>Título</B></label>
                         <input type="text" name="Titulo" id="Titulo" class="form-control" placeholder="Título" required>
                         <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Complete los datos</div>
+                        <div class="invalid-feedback">Por favor, ingrese un título!</div>
                     </div>
 
                     <div class="col-md-6 mb-2">
                         <label for="Actores" class="mb-2"><B>Actores</B></label>
                         <input type="text" name="Actores" id="Actores" class="form-control" placeholder="Actores" required>
                         <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Complete los datos</div>
+                        <div class="invalid-feedback">Por favor, ingrese los actores!</div>
                     </div>
                 </div>
 
@@ -37,14 +37,14 @@ include_once '../../../estructura/cabecera_tp2.php';
                         <label for="Director" class="mb-2"><B>Director</B></label>
                         <input type="text" name="Director" id="Director" class="form-control" placeholder="Director" required>
                         <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Complete los datos</div>
+                        <div class="invalid-feedback">Por favor, ingrese el director!</div>
                     </div>
 
                     <div class="col-md-6 mb-2">
                         <label for="Guion" class="mb-2"><B>Guión</B></label>
                         <input type="text" name="Guion" id="Guion" class="form-control" placeholder="Guión" required>
                         <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Complete los datos</div>
+                        <div class="invalid-feedback">Por favor, ingrese un guión!</div>
                     </div>
                 </div>
 
@@ -53,14 +53,14 @@ include_once '../../../estructura/cabecera_tp2.php';
                         <label for="Produccion" class="mb-2"><B>Producción</B></label>
                         <input type="text" name="Produccion" id="Produccion" class="form-control" required>
                         <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Complete los datos</div>
+                        <div class="invalid-feedback">Por favor, ingrese la Producción!</div>
                     </div>
 
                     <div class="col-md-1 mb-2">
                         <label for="Año" class="mb-2"><B>Año</B></label>
                         <input type="text" name="Año" id="Año" class="form-control" required>
                         <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Complete los datos</div>
+                        <div class="invalid-feedback">Por favor, ingrese el año!</div>
                     </div>
                 </div>
 
@@ -69,7 +69,7 @@ include_once '../../../estructura/cabecera_tp2.php';
                         <label for="Nacionalidad" class="mb-2"><B>Nacionalidad</B></label>
                         <input type="text" name="Nacionalidad" id="Nacionalidad" class="form-control" required>
                         <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Complete los datos</div>
+                        <div class="invalid-feedback">Por favor, ingrese la nacionalidad!</div>
                     </div>
 
                     <div class="col-md-4 mb-2">
@@ -84,7 +84,7 @@ include_once '../../../estructura/cabecera_tp2.php';
                             <option value="otras">Otras</option>
                         </select>
                         <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Complete los datos</div>
+                        <div class="invalid-feedback">Por favor, seleccione el género!</div>
                     </div>
                 </div>
 
@@ -93,7 +93,7 @@ include_once '../../../estructura/cabecera_tp2.php';
                         <label for="Duracion" class="mb-2"><B>Duración</B></label>
                         <input type="text" name="Duracion" id="Duracion" class="form-control" required><small>(minutos)</small>
                         <div class="valid-feedback">Campo completo</div>
-                        <div class="invalid-feedback">Complete los datos</div>
+                        <div class="invalid-feedback">Por favor, ingrese la duración!</div>
                     </div>
 
                     <div class="col-md-4 mb-2">
