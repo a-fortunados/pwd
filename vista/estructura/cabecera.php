@@ -30,33 +30,33 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Practico 1</a>
 
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="../1/1/index.php">Ejercicio 1</a></li>
-                                <li><a class="dropdown-item" href="../../1/2/index.php">Ejercicio 2</a></li>
-                                <li><a class="dropdown-item" href="../../1/3/index.php">Ejercicio 3</a></li>
-                                <li><a class="dropdown-item" href="../../1/4/index.php">Ejercicio 4</a></li>
-                                <li><a class="dropdown-item" href="../../1/5/index.php">Ejercicio 5</a></li>
-                                <li><a class="dropdown-item" href="../../1/6/index.php">Ejercicio 6</a></li>
-                                <li><a class="dropdown-item" href="../../1/7/index.php">Ejercicio 7</a></li>
-                                <li><a class="dropdown-item" href="../../1/8/index.php">Ejercicio 8</a></li>
+                                <li><a class="dropdown-item" href="../1/1/index.php">Ejercicio1</a></li>
+                                <li><a class="dropdown-item" href="../../1/2/index.php">Ejercicio2</a></li>
+                                <li><a class="dropdown-item" href="../../1/3/index.php">Ejercicio3</a></li>
+                                <li><a class="dropdown-item" href="../../1/4/index.php">Ejercicio4</a></li>
+                                <li><a class="dropdown-item" href="../../1/5/index.php">Ejercicio5</a></li>
+                                <li><a class="dropdown-item" href="../../1/6/index.php">Ejercicio6</a></li>
+                                <li><a class="dropdown-item" href="../../1/7/index.php">Ejercicio7</a></li>
+                                <li><a class="dropdown-item" href="../../1/8/index.php">Ejercicio8</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Practico 2</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Ejercicio 1</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio 2</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio 3</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio 4</a></li>
+                                <li><a class="dropdown-item" href="#">Ejercicio1</a></li>
+                                <li><a class="dropdown-item" href="#">Ejercicio2</a></li>
+                                <li><a class="dropdown-item" href="#">Ejercicio3</a></li>
+                                <li><a class="dropdown-item" href="#">Ejercicio4</a></li>
                             </ul>
                         </li>
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Practico 3</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Ejercicio 1</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio 2</a></li>
-                                <li><a class="dropdown-item" href="#">Ejercicio 3</a></li>
+                                <li><a class="dropdown-item" href="#">Ejercicio1</a></li>
+                                <li><a class="dropdown-item" href="#">Ejercicio2</a></li>
+                                <li><a class="dropdown-item" href="#">Ejercicio3</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -43,17 +43,17 @@ include_once '../../../estructura/cabecera_tp1.php';
                 </div>
 
                 <div class="form-check">
-                <input class="form-check-input" name="dep[]" type="checkbox" value="basket" id="basket">
+                    <input class="form-check-input" name="dep[]" type="checkbox" value="basket" id="basket">
                     <label class="form-check-label" for="basket">Basket</label>
                 </div>
 
                 <div class="form-check">
-                <input class="form-check-input" name="dep[]" type="checkbox" value="tennis" id="tennis">
+                    <input class="form-check-input" name="dep[]" type="checkbox" value="tennis" id="tennis">
                     <label class="form-check-label" for="tennis">Tennis</label>
                 </div>
 
                 <div class="form-check">
-                <input class="form-check-input" name="dep[]" type="checkbox" value="voley" id="voley">
+                    <input class="form-check-input" name="dep[]" type="checkbox" value="voley" id="voley">
                     <label class="form-check-label" for="voley">Voley</label>
                     <div class="invalid-feedback">Por favor, seleccione que deporte(s) practica!</div>
                 </div>
@@ -68,26 +68,7 @@ include_once '../../../estructura/cabecera_tp1.php';
     </div>
 
     <script>
-        // Example starter JavaScript for disabling form submissions if there are invalid fields
-        (function () {
-        'use strict'
-
-        // Fetch all the forms we want to apply custom Bootstrap validation styles to
-        var forms = document.querySelectorAll('.needs-validation')
-
-        // Loop over them and prevent submission
-        Array.prototype.slice.call(forms)
-            .forEach(function (form) {
-            form.addEventListener('submit', function (event) {
-                if (!form.checkValidity()) {
-                event.preventDefault()
-                event.stopPropagation()
-                }
-
-                form.classList.add('was-validated')
-            }, false)
-            })
-        })()
+        validacion();
     </script>
 </div>
 
