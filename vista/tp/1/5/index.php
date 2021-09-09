@@ -7,53 +7,82 @@ include_once '../../../estructura/cabecera_tp1.php';
 ?>
 <div class="container-main">
     <div>
-        <form id="form5" name="form5" method="post" action="mostrarDatos.php">
-            <table>
-                <tr>
-                    <td>Nombre:&nbsp;</td>
-                    <td><input type="text" name="nombre" size="40" placeholder="Escriba su nombre completo"></td>
-                </tr>
+        <form id="form5" name="form5" method="post" action="mostrarDatos.php" class="mb-3 needs-validation" novalidate>
+            <div class="col-md-4">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+                <div class="invalid-feedback">Por favor, ingrese su nombre!</div>
+            </div>
 
-                <tr>
-                    <td>Apellido:&nbsp;</td>
-                    <td><input type="text" name="apellido" size="40" placeholder="Escriba todos sus apellidos"></td>
-                </tr>
+            <div class="col-md-4">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" required>
+                <div class="invalid-feedback">Por favor, ingrese su apellido!</div>
+            </div>
 
-                <tr>
-                    <td>Edad:&nbsp;</td>
-                    <td><input type="number" name="edad" size="40" min="1" placeholder="Escriba su edad, debe ser mayor a 1"></td>
-                </tr>
+            <div class="col-md-4">
+                <label for="edad" class="form-label">Edad</label>
+                <input type="number" min="1" class="form-control" id="edad" required>
+                <div class="invalid-feedback">Por favor, ingrese su edad!</div>
+            </div>
 
-                <tr>
-                    <td>Dirección:&nbsp;</td>
-                    <td><input name="direccion" id="direccion" size="40" placeholder="Escriba su direccion completa"></td>
-                </tr>
+            <div class="col-md-4">
+                <label for="direccion" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="direccion" required>
+                <div class="invalid-feedback">Por favor, ingrese su dirección!</div>
+            </div>
 
-                <tr>
-                    <td>Nivel de estudio:&nbsp;</td>
-                    <td>
-                        <ul>
-                            <li><input type="radio" name="estudio" value="No tiene estudios">No tiene estudios</li>
-                            <li><input type="radio" name="estudio" value="Estudios primarios">Estudios primarios</li>
-                            <li><input type="radio" name="estudio" value="Estudios secundarios">Estudios secundarios</li>
-                        </ul>
-                    </td>
-                </tr>
+            <div class="col-md-4">
+                <label for="estudio">Nivel de estudio</label>
+                <select class="form-select" id="estudio" required>
+                    <option selected disabled value="">Seleccione...</option>
+                    <option value="No tiene estudios">No tiene estudios</option>
+                    <option value="Estudios primarios">Estudios primarios</option>
+                    <option value="Estudios secundarios">Estudios secundarios</option>
+                </select>
+                <div class="invalid-feedback">Por favor, ingrese su nivel!</div>
+            </div>
 
-                <tr>
-                    <td>Sexo:&nbsp;</td>
-                    <td>
-                        <ul>
-                            <li><input type="radio" name="sexo" value="Femenino">Femenino</li>
-                            <li><input type="radio" name="sexo" value="Masculino">Masculino</li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+            <div class="col-md-4">
+                <label for="sexo">Sexo</label>
+                <select class="form-select" id="sexo" required>
+                    <option selected disabled value="">Seleccione...</option>
+                    <option value="Femenino">Femenino</option>
+                    <option value="Masculino">Masculino</option>
+                </select>
+                <div class="invalid-feedback">Por favor, ingrese su sexo!</div>
+            </div>
 
-            <input id="eje5" name="eje5" type="submit" value="Enviar">
+            <br>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
         </form>
     </div>
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
 </div>
 
 <?php
