@@ -3,7 +3,7 @@ class control_ej4
 {
     public function crearTexto($array)
     {
-        $campos = ["Titulo: ", "Actores: ", "Director: ", "Guion: ", "Produccion: ", "Año: ", "Nacionalidad: ", "Genero: ", "Duracion: ", "Restricciones de edad: "];
+        $campos = ["Titulo: ", "Actores: ", "Director: ", "Guion: ", "Produccion: ", "Año: ", "Nacionalidad: ", "Genero: ", "Duracion: ", "Restricciones de edad: ", "Sinopsis: "];
         $i = 0;
         $texto = "";
         foreach ($array as $dato) {
