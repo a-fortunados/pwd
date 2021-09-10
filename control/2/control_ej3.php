@@ -15,12 +15,16 @@ class control_ej3
     {
         $i = 0;
         $found = false;
-        while ($i < count($array) && !$found) {
-            if ($array[$i]["username"] == $enteredData["username"] && $array[$i]["password"] == $enteredData["password"]) {
-                $found = true;
+
+        if (!($enteredData["username"] == $enteredData["password"])) {
+            while ($i < count($array) && !$found) {
+                if ($array[$i]["username"] == $enteredData["username"] && $array[$i]["password"] == $enteredData["password"]) {
+                    $found = true;
+                }
+                $i++;
             }
-            $i++;
         }
+
         return $found;
     }
 
