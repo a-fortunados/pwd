@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../css/styles.css">
 
+    <script type="text/javascript" src="../../../js/validacion.js"></script>
+
     <!-- Cabecera redirect index php htdocs -->
     <title><?php echo $titulo; ?></title>
 </head>
