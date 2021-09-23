@@ -1,6 +1,6 @@
 <?php
 $titulo = "TP3 - EJ2";
-include_once '../../../estructura/cabecera_tp3.php';
+include_once '../../../estructura/cabecera.php';
 ?>
 
 <div class="container-main">

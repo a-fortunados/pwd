@@ -2,7 +2,7 @@
 
 $titulo = 'Programación Web Dinámica';
 
-include_once 'estructura/cabecera_principal.php';
+include_once 'estructura/cabecera.php';
 
 ?>
 
@@ -26,6 +26,6 @@ include_once 'estructura/cabecera_principal.php';
 
 <?php
 
-include_once 'estructura/pie_principal.php';
+include_once 'estructura/pie.php';
 
 ?>

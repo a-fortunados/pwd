@@ -2,7 +2,7 @@
 
 $titulo = 'TP3 - EJ1';
 
-include_once '../../../estructura/cabecera_tp3.php';
+include_once '../../../estructura/cabecera.php';
 
 ?>
 
