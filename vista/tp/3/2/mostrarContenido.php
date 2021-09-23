@@ -1,6 +1,6 @@
 <?php
 $titulo = "TP3 - EJ2";
-include_once '../../../estructura/cabecera_tp3.php';
+include_once '../../../estructura/cabecera.php';
 include '../../../../control/3/control_ej2.php';
 
 $control = new control_ej2();

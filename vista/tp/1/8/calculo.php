@@ -1,7 +1,7 @@
 <?php
 $titulo = 'TP1 - EJ8';
 
-include_once '../../../estructura/cabecera_tp1.php';
+include_once '../../../estructura/cabecera.php';
 include '../../../../control/1/control_ej8.php';
 
 $control = new control_ej8();
