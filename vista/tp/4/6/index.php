@@ -12,14 +12,53 @@ include_once '../../../estructura/cabecera.php';
         Recordar usar la capa de control antes generada, no se puede acceder directamente a las clases del ORM.
     </p>
 
-    <form class="needs-validation" novalidate id="patente" name="patente" method="post" action="accionAutos.php">
-        <div class="form-floating mb-3">
-            <input class="form-control" id="patente" name="patente" type="text" placeholder="patente" required>
-            <label for="patente">Ingrese una patente</label>
-            <div class="invalid-feedback">Por favor, ingrese una patente!</div>
+    <form class="needs-validation" novalidate id="formPersona" name="formPersona" method="post" action="accionNuevaPersona.php">
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="dni" name="dni" type="number" maxlength="8" minlength="7" placeholder="DNI" required>
+                <label for="dni">Ingrese su DNI</label>
+                <div class="invalid-feedback">Por favor, ingrese su DNI, sin puntos!</div>
+            </div>
         </div>
-        <div>
-            <button class="btn btn-primary" type="submit" value="Listar">Listar</button>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="apellido" name="apellido" type="text" placeholder="Apellido" required>
+                <label for="apellido">Ingrese su apellido</label>
+                <div class="invalid-feedback">Por favor, ingrese su apellido!</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Nombre" required>
+                <label for="nombre">Ingrese su nombre</label>
+                <div class="invalid-feedback">Por favor, ingrese su nombre!</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="fechaNacimiento" name="fechaNacimiento" type="date" placeholder="Fecha de Nacimiento" required>
+                <label for="fechaNacimiento">Ingrese su fecha de nacimiento</label>
+                <div class="invalid-feedback">Por favor, ingrese su fecha de nacimiento!</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="telefono" name="telefono" type="number" placeholder="Teléfono" required>
+                <label for="telefono">Ingrese su teléfono</label>
+                <div class="invalid-feedback">Por favor, ingrese su teléfono!</div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="domicilio" name="domicilio" type="text" placeholder="Domicilio" required>
+                <label for="domicilio">Ingrese su domicilio</label>
+                <div class="invalid-feedback">Por favor, ingrese su domicilio!</div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="d-grid">
+                <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
         </div>
     </form>
 </div>
