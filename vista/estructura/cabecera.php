@@ -65,6 +65,8 @@
                                 <li><a class="dropdown-item" href="../../../tp/4/4">Ejercicio 4</a></li>
                                 <li><a class="dropdown-item" href="../../../tp/4/6">Ejercicio 6</a></li>
                                 <li><a class="dropdown-item" href="../../../tp/4/7">Ejercicio 7</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/4/8">Ejercicio 8</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/4/9">Ejercicio 9</a></li>
                             </ul>
                         </li>
                     </ul>
