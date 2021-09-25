@@ -1,0 +1,35 @@
+<?php
+$titulo = "TP4 - EJ8";
+include_once '../../../estructura/cabecera.php';
+?>
+
+<div class="main-container">
+    <p class="text-center mt-4">
+        Crear una página “CambioDuenio.php” que contenga un formulario en donde se solicite el
+        numero de patente de un auto y un numero de documento de una persona, estos datos deberán ser enviados
+        a una página “accionCambioDuenio.php” en donde se realice cambio del dueño del auto de la patente
+        ingresada en el formulario. Mostrar mensajes de error en caso de que el auto o la persona no se encuentren
+        cargados. Utilizar css y validaciones javaScript cuando crea conveniente. Recordar usar la capa de control
+        antes generada, no se puede acceder directamente a las clases del ORM.
+    </p>
+
+    <form class="needs-validation" novalidate id="patente-documento" name="patente-documento" method="post" action=".php">
+        <div class="form-floating mb-3">
+            <input class="form-control" id="patente" name="patente" type="text" placeholder="patente" required>
+            <label for="patente">Ingrese una patente</label>
+            <div class="invalid-feedback">Por favor, ingrese una patente!</div>
+        </div>
+        <div class="form-floating mb-3">
+            <input class="form-control" id="documento" name="documento" type="text" placeholder="DNI" required>
+            <label for="DNI">Ingrese su documento</label>
+            <div class="invalid-feedback">Por favor, ingrese su documento!</div>
+        </div>
+        <div>
+            <button class="btn btn-primary" type="submit" value="Buscar">Buscar</button>
+        </div>
+    </form>
+</div>
+
+<?php
+include_once '../../../estructura/pie.php';
+?>
