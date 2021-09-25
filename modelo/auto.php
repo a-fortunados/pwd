@@ -85,8 +85,8 @@ class auto
             if ($res > -1) {
                 if ($res > 0) {
                     $row = $base->Registro();
-                    $this->setear($row['Patente'], $row['Marca'], $row['Modelo'],
-                        $row['DniDuenio']);
+                    $this->setear($row['patente'], $row['marca'], $row['modelo'],
+                        $row['dni_duenio']);
                 }
             }
         } else {
@@ -101,7 +101,7 @@ class auto
         $resp = false;
         $base = new BaseDatos();
         $sql = "UPDATE 'auto' SET patente ='{$this->getPatente()}' , marca = '{$this->getMarca()}' ,
-        modelo = '{$this->getModelo()}' , dniDuenio = '{$this->getObjDuenio()->getNroDni()}'
+        modelo = '{$this->getModelo()}' , dni_duenio = '{$this->getObjDuenio()->getNroDni()}'
         WHERE patente = " . $this->getPatente();
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
@@ -145,8 +145,8 @@ class auto
             if ($res > 0) {
                 while ($row = $base->Registro()) {
                     $obj = new auto();
-                    $obj->setear($row['Patente'], $row['Marca'], $row['Modelo'],
-                        $row['DniDuenio']);
+                    $obj->setear($row['patente'], $row['marca'], $row['modelo'],
+                        $row['dni_duenio']);
                     array_push($arreglo, $obj);
                 }
             }
@@ -160,7 +160,7 @@ class auto
     {
         $resp = false;
         $base = new BaseDatos();
-        $sql = 'INSERT INTO auto (Patente , Modelo , Marca)
+        $sql = 'INSERT INTO auto (patente , modelo , marca)
                 VALUES'("{$this->getPatente()} , {$this->getModelo()} , {$this->getMarca()}");
         if ($base->Iniciar()) {
             if ($elid = $base->Ejecutar($sql)) {

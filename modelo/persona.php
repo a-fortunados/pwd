@@ -111,8 +111,8 @@ class Persona_class
             if ($res > -1) {
                 if ($res > 0) {
                     $row = $base->Registro();
-                    $this->setear($row['nroDni'], $row['nombre'], $row['apellido'],
-                        $row['domicilio'], $row['fechaNac'], $row['telefono']);
+                    $this->setear($row['nro_dni'], $row['nombre'], $row['apellido'],
+                        $row['domicilio'], $row['fech_nac'], $row['telefono']);
                 }
             }
         } else {
@@ -127,8 +127,8 @@ class Persona_class
         $resp = false;
         $base = new BaseDatos();
         $sql = "UPDATE persona SET nombre ='{$this->getNombre()}' , apellido = '{$this->getApellido()}' ,
-        telefono = '{$this->getTelefono()}' , domicilio = '{$this->getDomicilio()}' , fechaNac = '{$this->getFechaNac()}'
-        WHERE nroDni = " . $this->getNroDni();
+        telefono = '{$this->getTelefono()}' , domicilio = '{$this->getDomicilio()}' , fecha_nac = '{$this->getFechaNac()}'
+        WHERE nro_dni = " . $this->getNroDni();
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 $resp = true;
@@ -145,7 +145,7 @@ class Persona_class
     {
         $resp = false;
         $base = new BaseDatos();
-        $sql = "DELETE FROM persona WHERE nroDni = " . $this->getNroDni();
+        $sql = "DELETE FROM persona WHERE nro_dni = " . $this->getNroDni();
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 return true;
@@ -178,8 +178,8 @@ class Persona_class
                     echo 'hola';
                     while ($row = $base->Registro()) {
                         $obj = new Persona_class();
-                        $obj->setear($row['nroDni'], $row['nombre'], $row['apellido'],
-                            $row['domicilio'], $row['fechaNac'], $row['telefono']);
+                        $obj->setear($row['nro_dni'], $row['nombre'], $row['apellido'],
+                            $row['domicilio'], $row['fecha_nac'], $row['telefono']);
                         array_push($arreglo, $obj);
                     }
                 }
@@ -195,7 +195,7 @@ class Persona_class
     {
         $resp = false;
         $base = new BaseDatos();
-        $sql = 'INSERT INTO persona(nroDni , apellido , nombre , fechaNac , telefono, domicilio)
+        $sql = 'INSERT INTO persona(nro_dni , apellido , nombre , fecha_nac , telefono, domicilio)
                 VALUES'("{$this->getNroDni()} , {$this->getApellido()} , {$this->getNombre()} , {$this->getFechaNac()} , {$this->getTelefono()} , {$this->getDomicilio()}");
         if ($base->Iniciar()) {
             if ($elid = $base->Ejecutar($sql)) {

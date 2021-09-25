@@ -6,10 +6,10 @@ class AbmPersonas
     private function cargarObjeto($parametro)
     {
         $persona = null;
-        if (array_key_exists('nroDni', $parametro)) {
+        if (array_key_exists('nro_dni', $parametro)) {
             $persona = new Persona_class();
-            $persona->setear($parametro['nroDni'], $parametro['nombre'], $parametro['apellido'],
-                $parametro['domicilio'], $parametro['fechaNac'], $parametro['telefono']);
+            $persona->setear($parametro['nro_dni'], $parametro['nombre'], $parametro['apellido'],
+                $parametro['domicilio'], $parametro['fecha_nac'], $parametro['telefono']);
         }
         return $persona;
     }
@@ -17,9 +17,9 @@ class AbmPersonas
     private function cargarObjetoConClave($parametro)
     {
         $obj = null;
-        if (isset($parametro['nroDni'])) {
+        if (isset($parametro['nro_dni'])) {
             $obj = new Persona_class();
-            $obj->setear($parametro['nroDni'], null, null, null, null, null);
+            $obj->setear($parametro['nro_dni'], null, null, null, null, null);
         }
         return $obj;
     }
@@ -36,7 +36,7 @@ class AbmPersonas
     public function alta($parametro)
     {
         $respuesta = false;
-        $parametro['nroDni'] = null;
+        $parametro['nro_dni'] = null;
         $objPersona = $this->cargarObjeto($parametro);
         if ($objPersona != null and $objPersona->insertar()) {
             $respuesta = true;
