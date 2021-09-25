@@ -57,6 +57,13 @@
                                 <li><a class="dropdown-item" href="../../../tp/3/2">Ejercicio 2</a></li>
                             </ul>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Práctico 4</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="../../../tp/4/3">Ejercicio 3</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>

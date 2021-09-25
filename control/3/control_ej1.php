@@ -7,7 +7,7 @@ class control_ej1
         if ($datosArchivos['archivo']['error'] <= 0) {
             echo "Nombre: " . $datosArchivos['archivo']['name'] . "<br/>";
             echo "Tipo: " . $datosArchivos['archivo']['type'] . "<br/>";
-            echo "Tamanio: " . ($datosArchivos['archivo']['size'] / 1024) . "kB<br/>";
+            echo "Tamaño: " . ($datosArchivos['archivo']['size'] / 1024) . "kB<br/>";
             echo "Carpeta Temporal: " . $datosArchivos['archivo']['tmp_name'] . "<br/>";
             $tamanio = $datosArchivos['archivo']['size'];
             $dir = '../../../archivos/';
