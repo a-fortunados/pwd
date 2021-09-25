@@ -12,7 +12,7 @@ include_once '../../../estructura/cabecera.php';
         Recordar usar la capa de control antes generada, no se puede acceder directamente a las clases del ORM.
     </p>
 
-    <form class="needs-validation" novalidate id="formPersona" name="formPersona" method="post" action="accionNuevaPersona.php">
+    <form class="needs-validation" novalidate id="formPersona" name="formPersona" method="post" action="accionNuevaPersona.php" onsubmit="return validarPersona();">
         <div class="col-md-4">
             <div class="form-floating mb-3">
                 <input class="form-control" id="dni" name="dni" type="number" maxlength="8" minlength="7" placeholder="DNI" required>
@@ -62,6 +62,8 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </form>
 </div>
+
+<script src="../../../js/validaciones.js"></script>
 
 <?php
 include_once '../../../estructura/pie.php';
