@@ -9,13 +9,17 @@ include_once '../../../estructura/cabecera.php';
     </p>
 
     <form class="needs-validation" novalidate id="patente" name="patente" method="post" action="accionAutos.php">
-        <div class="form-floating mb-3">
-            <input class="form-control" id="patente" name="patente" type="text" placeholder="patente" required>
-            <label for="patente">Ingrese una patente</label>
-            <div class="invalid-feedback">Por favor, ingrese una patente!</div>
+        <div class="col-md-4">
+            <div class="form-floating mb-3">
+                <input class="form-control" id="patente" name="patente" type="text" placeholder="patente" required>
+                <label for="patente">Ingrese una patente</label>
+                <div class="invalid-feedback">Por favor, ingrese una patente!</div>
+            </div>
         </div>
-        <div>
-            <button class="btn btn-primary" type="submit" value="Listar">Listar</button>
+        <div class="col-md-4">
+            <div class="d-grid">
+                <button class="btn btn-primary" type="submit" value="Listar">Listar</button>
+            </div>
         </div>
     </form>
 </div>
