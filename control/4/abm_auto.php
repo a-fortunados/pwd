@@ -9,7 +9,7 @@ class AbmAuto
         if (array_key_exists('patente', $parametro)) {
             $auto = new Auto();
             $auto->setear($parametro['patente'], $parametro['marca'], $parametro['modelo'],
-                $parametro['dni_duenio']);
+                $parametro['dniDuenio']);
         }
         return $auto;
     }
@@ -36,7 +36,7 @@ class AbmAuto
     public function alta($parametro)
     {
         $respuesta = false;
-        $parametro['patente'] = null;
+        // $parametro['patente'] = null;
         $objAuto = $this->cargarObjeto($parametro);
         if ($objAuto != null and $objAuto->insertar()) {
             $respuesta = true;
@@ -84,8 +84,8 @@ class AbmAuto
                 $where .= " and modelo ='" . $param['modelo'] . "'";
             }
 
-            if (isset($param['dni_duenio'])) {
-                $where .= " and dni_duenio ='" . $param['dni_duenio'];
+            if (isset($param['dniDuenio'])) {
+                $where .= " and dni_duenio = '" . $param['dniDuenio'] . "'";
             }
 
         }
