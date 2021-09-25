@@ -73,15 +73,15 @@ class AbmAuto
         $where = " true ";
         if ($param != null) {
             if (isset($param['patente'])) {
-                $where .= " and patente =" . $param['patente'];
+                $where .= " and patente = '" . $param['patente'] . "'";
             }
 
             if (isset($param['marca'])) {
-                $where .= " and marca ='" . $param['marca'];
+                $where .= " and marca = '" . $param['marca'] . "'";
             }
 
             if (isset($param['modelo'])) {
-                $where .= " and modelo ='" . $param['modelo'];
+                $where .= " and modelo ='" . $param['modelo'] . "'";
             }
 
             if (isset($param['dni_duenio'])) {
