@@ -85,15 +85,18 @@ class auto
             if ($res > -1) {
                 if ($res > 0) {
                     $row = $base->Registro();
-                    $this->setear($row['patente'], $row['marca'], $row['modelo'],
-                        $row['dni_duenio']);
+                    $this->setear(
+                        $row['patente'],
+                        $row['marca'],
+                        $row['modelo'],
+                        $row['dni_duenio']
+                    );
                 }
             }
         } else {
             $this->setmensajeoperacion("Tabla->listar: " . $base->getError());
         }
         return $resp;
-
     }
 
     public function modificar()
@@ -119,7 +122,7 @@ class auto
     {
         $resp = false;
         $base = new BaseDatos();
-        $sql = "DELETE FROM 'auto' WHERE patente = " . $this->getPatente();
+        $sql = "DELETE FROM 'auto' WHERE patente = '" . $this->getPatente() . "'";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 return true;
@@ -145,8 +148,12 @@ class auto
             if ($res > 0) {
                 while ($row = $base->Registro()) {
                     $obj = new auto();
-                    $obj->setear($row['patente'], $row['marca'], $row['modelo'],
-                        $row['dni_duenio']);
+                    $obj->setear(
+                        $row['patente'],
+                        $row['marca'],
+                        $row['modelo'],
+                        $row['dni_duenio']
+                    );
                     array_push($arreglo, $obj);
                 }
             }
@@ -160,8 +167,8 @@ class auto
     {
         $resp = false;
         $base = new BaseDatos();
-        $sql = 'INSERT INTO auto (patente , modelo , marca)
-                VALUES'("{$this->getPatente()} , {$this->getModelo()} , {$this->getMarca()}");
+        $sql = "INSERT INTO auto (patente , modelo , marca)
+                VALUES('" . $this->getPatente() . "' , '" . $this->getModelo() . "' , '" . $this->getMarca() . "')";
         if ($base->Iniciar()) {
             if ($elid = $base->Ejecutar($sql)) {
                 $this->setPatente($elid);
@@ -174,5 +181,4 @@ class auto
         }
         return $resp;
     }
-
 }

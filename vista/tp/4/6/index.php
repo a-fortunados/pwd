@@ -15,8 +15,8 @@ include_once '../../../estructura/cabecera.php';
     <form class="needs-validation" novalidate id="formPersona" name="formPersona" method="post" action="accionNuevaPersona.php" onsubmit="return validarPersona();">
         <div class="col-md-4">
             <div class="form-floating mb-3">
-                <input class="form-control" id="dni" name="dni" type="number" maxlength="8" minlength="7" placeholder="DNI" required>
-                <label for="dni">Ingrese su DNI</label>
+                <input class="form-control" id="nroDni" name="nroDni" type="number" maxlength="8" minlength="7" placeholder="DNI" required>
+                <label for="nroDni">Ingrese su DNI</label>
                 <div class="invalid-feedback">Por favor, ingrese su DNI, sin puntos!</div>
             </div>
         </div>
@@ -36,8 +36,8 @@ include_once '../../../estructura/cabecera.php';
         </div>
         <div class="col-md-4">
             <div class="form-floating mb-3">
-                <input class="form-control" id="fechaNacimiento" name="fechaNacimiento" type="date" placeholder="Fecha de Nacimiento" required>
-                <label for="fechaNacimiento">Ingrese su fecha de nacimiento</label>
+                <input class="form-control" id="fechaNac" name="fechaNac" type="date" placeholder="Fecha de Nacimiento" required>
+                <label for="fechaNac">Ingrese su fecha de nacimiento</label>
                 <div class="invalid-feedback">Por favor, ingrese su fecha de nacimiento!</div>
             </div>
         </div>
