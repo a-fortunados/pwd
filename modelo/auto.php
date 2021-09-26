@@ -103,9 +103,11 @@ class auto
     {
         $resp = false;
         $base = new BaseDatos();
-        $sql = "UPDATE 'auto' SET patente ='{$this->getPatente()}' , marca = '{$this->getMarca()}' ,
-        modelo = '{$this->getModelo()}' , dni_duenio = '{$this->getObjDuenio()->getNroDni()}'
-        WHERE patente = " . $this->getPatente();
+        $objPersona = $this->getObjDuenio();
+        $dni = $objPersona[0]->getNroDni();
+        $sql = "UPDATE auto SET patente = '{$this->getPatente()}', marca = '{$this->getMarca()}' ,
+        modelo = {$this->getModelo()}, dni_duenio = '$dni'
+        WHERE patente = '" . $this->getPatente() . "'";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 $resp = true;
@@ -167,8 +169,10 @@ class auto
     {
         $resp = false;
         $base = new BaseDatos();
-        $sql = "INSERT INTO auto (patente , modelo , marca)
-                VALUES('" . $this->getPatente() . "' , '" . $this->getModelo() . "' , '" . $this->getMarca() . "')";
+        $objPersona = $this->getObjDuenio();
+        $dni = $objPersona[0]->getNroDni();
+        $sql = "INSERT INTO auto (dni_duenio, patente, modelo, marca)
+                VALUES('$dni', '" . $this->getPatente() . "' , '" . $this->getModelo() . "' , '" . $this->getMarca() . "')";
         if ($base->Iniciar()) {
             if ($elid = $base->Ejecutar($sql)) {
                 $this->setPatente($elid);

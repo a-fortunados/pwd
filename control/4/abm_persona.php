@@ -33,7 +33,7 @@ class AbmPersona
     private function seteadosCamposClaves($parametro)
     {
         $resp = false;
-        if (isset($parametro['id'])) {
+        if (isset($parametro['nroDni'])) {
             $resp = true;
         }
         return $resp;
@@ -44,7 +44,7 @@ class AbmPersona
         $respuesta = false;
         //$parametro['nroDni'] = null;
         $objPersona = $this->cargarObjeto($parametro);
-        if ($objPersona != null and $objPersona->insertar()) {
+        if ($objPersona != null && $objPersona->insertar()) {
             $respuesta = true;
         }
         return $respuesta;
@@ -55,7 +55,7 @@ class AbmPersona
         $respuesta = false;
         if ($this->seteadosCamposClaves($parametro)) {
             $objPersona = $this->cargarObjetoConClave($parametro);
-            if ($objPersona != null and $objPersona->eliminar()) {
+            if ($objPersona != null && $objPersona->eliminar()) {
                 $respuesta = true;
             }
         }
@@ -66,8 +66,9 @@ class AbmPersona
     {
         $respuesta = false;
         if ($this->seteadosCamposClaves($parametro)) {
-            $objPersona = $this->cargarObjeto($parametro);
-            if ($objPersona != null and $objPersona->modificar()) {
+            $objPersona = $this->buscar($parametro);
+            $objPersona[0] = $this->cargarObjeto($parametro);
+            if ($objPersona != null && $objPersona[0]->modificar()) {
                 $respuesta = true;
             }
         }
@@ -79,17 +80,17 @@ class AbmPersona
         $where = " true ";
         if ($param <> null) {
             if (isset($param['nroDni']))
-                $where .= " and nro_dni =" . $param['nroDni'];
+                $where .= " and nro_dni = '" . $param['nroDni'] . "'";
             if (isset($param['nombre']))
-                $where .= " and nombre ='" . $param['nombre'];
+                $where .= " and nombre = '" . $param['nombre'] . "'";
             if (isset($param['apellido']))
-                $where .= " and apellido ='" . $param['apellido'];
+                $where .= " and apellido = '" . $param['apellido'] . "'";
             if (isset($param['fechaNac']))
-                $where .= " and fecha_nac ='" . $param['fechaNac'];
+                $where .= " and fecha_nac = '" . $param['fechaNac'] . "'";
             if (isset($param['telefono']))
-                $where .= " and telefono ='" . $param['telefono'];
+                $where .= " and telefono = '" . $param['telefono'] . "'";
             if (isset($param['domicilio']))
-                $where .= " and domicilio ='" . $param['domicilio'] . "'";
+                $where .= " and domicilio = '" . $param['domicilio'] . "'";
         }
         $arreglo = persona::listar($where);
 

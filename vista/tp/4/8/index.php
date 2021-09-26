@@ -26,7 +26,7 @@ include_once '../../../estructura/cabecera.php';
         </div>
         <div class="col-md-4">
             <div class="form-floating mb-3">
-                <input class="form-control" id="documento" name="documento" type="text" placeholder="DNI" required>
+                <input class="form-control" id="nroDni" name="nroDni" type="text" placeholder="DNI" required>
                 <label for="DNI">Ingrese su documento</label>
                 <div class="invalid-feedback">Por favor, ingrese su documento!</div>
             </div>

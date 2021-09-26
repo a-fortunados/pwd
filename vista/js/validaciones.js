@@ -1,6 +1,6 @@
 function validarDNI() {
     exito = true;
-    var dni = $('#NroDni')[0];
+    var dni = $('#nroDni')[0];
 
     //DNI
     if (dni.value === "" || isNaN(parseInt(dni.value)) || dni.value < 0 || dni.value.length < 7 || dni.value.length > 8) {

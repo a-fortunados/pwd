@@ -6,10 +6,14 @@ class AbmAuto
     private function cargarObjeto($parametro)
     {
         $auto = null;
-        if (array_key_exists('patente', $parametro)) {
-            $auto = new Auto();
-            $auto->setear($parametro['patente'], $parametro['marca'], $parametro['modelo'],
-                $parametro['dniDuenio']);
+        if (array_key_exists('patente', $parametro) && array_key_exists('marca', $parametro) && array_key_exists('modelo', $parametro) && array_key_exists('objPersona', $parametro)) {
+            $auto = new auto();
+            $auto->setear(
+                $parametro['patente'],
+                $parametro['marca'],
+                $parametro['modelo'],
+                $parametro['objPersona']
+            );
         }
         return $auto;
     }
@@ -27,7 +31,7 @@ class AbmAuto
     private function seteadosCamposClaves($parametro)
     {
         $resp = false;
-        if (isset($parametro['id'])) {
+        if (isset($parametro)) {
             $resp = true;
         }
         return $resp;
@@ -36,7 +40,6 @@ class AbmAuto
     public function alta($parametro)
     {
         $respuesta = false;
-        // $parametro['patente'] = null;
         $objAuto = $this->cargarObjeto($parametro);
         if ($objAuto != null and $objAuto->insertar()) {
             $respuesta = true;
@@ -49,7 +52,7 @@ class AbmAuto
         $respuesta = false;
         if ($this->seteadosCamposClaves($parametro)) {
             $objAuto = $this->cargarObjetoConClave($parametro);
-            if ($objAuto != null and $objAuto->eliminar()) {
+            if ($objAuto != null && $objAuto->eliminar()) {
                 $respuesta = true;
             }
         }
@@ -60,8 +63,10 @@ class AbmAuto
     {
         $respuesta = false;
         if ($this->seteadosCamposClaves($parametro)) {
-            $objAuto = $this->cargarObjeto($parametro);
-            if ($objAuto != null and $objAuto->modificar()) {
+            $objAuto = $this->buscar($parametro);
+            //$objAuto = $this->cargarObjeto($parametro);
+            $objAuto[0]->setObjDuenio($parametro['objPersona']);
+            if ($objAuto[0] != null && $objAuto[0]->modificar()) {
                 $respuesta = true;
             }
         }
@@ -87,10 +92,8 @@ class AbmAuto
             if (isset($param['dniDuenio'])) {
                 $where .= " and dni_duenio = '" . $param['dniDuenio'] . "'";
             }
-
         }
         $arreglo = auto::listar($where);
         return $arreglo;
     }
-
 }
