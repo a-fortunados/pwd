@@ -23,3 +23,7 @@ include_once '../../../estructura/cabecera.php';
         <button class="btn btn-primary" type="submit">Listar</button>
     </form>
 </div>
+
+<?php
+include_once '../../../estructura/pie.php';
+?>

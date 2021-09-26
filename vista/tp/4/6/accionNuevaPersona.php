@@ -14,7 +14,7 @@ $exito = $control->alta($_POST);
 if ($exito) {
     $resultadoBusqueda = $control->buscar(null);
     echo "<h3>Persona cargada correctamente</h3>";
-    echo "<table class='table'>";
+    echo "<table class='table mt-3'>";
     echo "<thead class='table-dark'>";
     echo "<tr>";
     echo "<th scope='col'>DNI</th>";
