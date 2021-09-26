@@ -8,7 +8,7 @@ include_once '../../../estructura/cabecera.php';
         <div class="card-body p-4">
             <figure class="mb-0">
                 <blockquote class="blockquote">
-                    <p class="bp-2">
+                    <p class="bp-2 fs-6">
                     Crear una página “NuevaPersona.php” que contenga un formulario que permita solicitar todos los datos de una persona. Estos datos serán enviados a una página “accionNuevaPersona.php” que cargue un nuevo registro en la tabla persona de la base de datos. Se debe mostrar un mensaje que indique si se pudo o no cargar los datos de la persona. Utilizar css y validaciones javaScript cuando crea conveniente. Recordar usar la capa de control antes generada, no se puede acceder directamente a las clases del ORM.
                     </p>
                 </blockquote>

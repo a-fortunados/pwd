@@ -8,7 +8,7 @@ include_once '../../../estructura/cabecera.php';
         <div class="card-body p-4">
             <figure class="mb-0">
                 <blockquote class="blockquote">
-                    <p class="bp-2">
+                    <p class="bp-2 fs-6">
                         Crear una pagina "buscarAuto.php" que contenga un formulario en donde se solicite el numero de patente de un auto, estos datos deberán ser enviados a una pagina “accionBuscarAuto.php” en donde usando la clase de control correspondiente, se soliciten los datos completos del auto que se corresponda con la patente ingresada y mostrar los datos en una tabla. También deberán mostrar los carteles que crean convenientes en caso de que no se encuentre ningún auto con la patente ingresada. Utilizar css y validaciones javaScript cuando crea conveniente. Recordar usar la capa de control antes generada, no se puede acceder directamente a las clases del ORM.
                     </p>
                 </blockquote>
