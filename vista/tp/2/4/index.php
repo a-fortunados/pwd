@@ -78,7 +78,7 @@ include_once '../../../estructura/cabecera.php';
 
                     <div class="col-md-1 mb-2">
                         <label for="Año" class="mb-2"><B>Año</B></label>
-                        <input type="text" name="Año" id="Año" class="form-control" required>
+                        <input type="text" name="Año" id="Año" class="form-control" maxlength="4" required>
                         <div class="valid-feedback">Campo completo</div>
                         <div class="invalid-feedback">Por favor, ingrese el año!</div>
                     </div>
@@ -111,7 +111,7 @@ include_once '../../../estructura/cabecera.php';
                 <div class="row">
                     <div class="col-md-4 mb-2">
                         <label for="Duracion" class="mb-2"><B>Duración</B></label>
-                        <input type="text" name="Duracion" id="Duracion" class="form-control" required><small>(minutos)</small>
+                        <input type="text" name="Duracion" id="Duracion" class="form-control" maxlength="3" required><small>(minutos)</small>
                         <div class="valid-feedback">Campo completo</div>
                         <div class="invalid-feedback">Por favor, ingrese la duración!</div>
                     </div>
