@@ -3,7 +3,7 @@ $titulo = "TP4 - EJ9";
 include_once '../../../estructura/cabecera.php';
 ?>
 
-<div class="main-container">
+<div class="container">
     <p class="text-center mt-4">
         Crear una página “BuscarPersona.html” que contenga un formulario que permita cargar un
         numero de documento de una persona. Estos datos serán enviados a una página “accionBuscarPersona.php”

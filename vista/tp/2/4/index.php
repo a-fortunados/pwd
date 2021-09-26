@@ -3,7 +3,27 @@ $titulo = "TP2 - EJ3";
 include_once '../../../estructura/cabecera.php';
 ?>
 
-<div class="container-main">
+<div class="container">
+    <div class="card bg-dark text-white rounded-3 mt-3">
+        <div class="card-body p-4">
+            <figure class="mb-0">
+                <blockquote class="blockquote">
+                    <p class="bp-2 fs-6">
+                        Diseñar un formulario que permita cargar las películas de la empresa Cinem@s. La lista géneros tiene los siguientes datos: Comedia, Drama, Terror, Románticas, Suspenso, Otras.
+                        Validar lo siguiente:
+                        <ul class="fs-6">
+                            <li class="fs-6">El año debe ser un campo que debe permitir ingresar como máximo 4 caracteres y solo aceptar números.</li>
+                            <li class="fs-6">El campo duración debe permitir un máximo de 3 números.</li>
+                            <li class="fs-6">Todos los datos son obligatorios.</li>
+                            <li class="fs-6">Al hacer click en el botón “Enviar”, se deberán mostrar todos los datos ingresados en el formulario.</li>
+                            <li class="fs-6">El botón “Borrar” debe limpiar el formulario.</li>
+                        </ul>
+                    </p>
+                </blockquote>
+            </figure>
+        </div>
+    </div>
+
     <div class="card">
         <div class="card-header">
             <div class="fs-6">
@@ -119,21 +139,14 @@ include_once '../../../estructura/cabecera.php';
                     <div class="invalid-feedback">Por favor, seleccione una imágen</div>
                 </div>
 
-                <div class="row mt-4">
-                    <div class="col-md-10">
-                    </div>
-
-                    <div class="row col-md-1">
-                        <button class="btn btn-primary" type="submit" value="enviar">Enviar</button>
-                    </div>
-
-                    <div class="row col-md-1">
-                        <button class="btn btn-secondary" type="reset" value="borrar">Borrar</button>
-                    </div>
+                <div class="d-grid d-md-flex justify-content-md-end mt-3">
+                    <button class="btn btn-primary me-md-2" type="submit" value="enviar">Enviar</button>
+                    <button class="btn btn-secondary" type="reset" value="borrar">Borrar</button>
                 </div>
             </form>
         </div>
     </div>
+    <br><br>
 </div>
 
 <?php

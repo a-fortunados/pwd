@@ -1,5 +1,5 @@
 <?php
-$titulo = "TP3 - EJ2";
+$titulo = "TP3 - EJ3";
 include_once '../../../estructura/cabecera.php';
 include_once '../../../../modelo/conector/base_datos.php';
 include_once '../../../../modelo/auto.php';
@@ -7,7 +7,7 @@ include_once '../../../../control/4/abm_auto.php';
 
 ?>
 
-<div class="container-main">
+<div class="container mt-3">
 
 <?php
 $obj = new AbmAuto();

@@ -3,16 +3,18 @@ $titulo = "TP4 - EJ7";
 include_once '../../../estructura/cabecera.php';
 ?>
 
-<div class="main-container">
-    <p class="text-center mt-4">
-        Crear una página “NuevoAuto.php” que contenga un formulario en el que se permita cargar
-        todos los datos de un auto (incluso su dueño). Estos datos serán enviados a una página
-        “accionNuevoAuto.php” que cargue un nuevo registro en la tabla auto de la base de datos. Se debe chequear
-        antes que la persona dueña del auto ya se encuentre cargada en la base de datos, de no ser así mostrar un
-        link a la página que permite carga una nueva persona. Se debe mostrar un mensaje que indique si se pudo o
-        no cargar los datos Utilizar css y validaciones javaScript cuando crea conveniente. Recordar usar la capa de
-        control antes generada, no se puede acceder directamente a las clases del ORM.
-    </p>
+<div class="container">
+    <div class="card bg-dark text-white rounded-3 mt-3 mb-3">
+        <div class="card-body p-4">
+            <figure class="mb-0">
+                <blockquote class="blockquote">
+                    <p class="bp-2">
+                    Crear una página “NuevoAuto.php” que contenga un formulario en el que se permita cargar todos los datos de un auto (incluso su dueño). Estos datos serán enviados a una página “accionNuevoAuto.php” que cargue un nuevo registro en la tabla auto de la base de datos. Se debe chequear antes que la persona dueña del auto ya se encuentre cargada en la base de datos, de no ser así mostrar un link a la página que permite carga una nueva persona. Se debe mostrar un mensaje que indique si se pudo o no cargar los datos Utilizar css y validaciones javaScript cuando crea conveniente. Recordar usar la capa de control antes generada, no se puede acceder directamente a las clases del ORM.
+                    </p>
+                </blockquote>
+            </figure>
+        </div>
+    </div>
 
     <form class="needs-validation" novalidate id="formPersona" name="formPersona" method="post" action="accionNuevoAuto.php" onsubmit="return validarAuto();">
         <div class="col-md-4">

@@ -5,11 +5,21 @@ $titulo = 'TP1 - EJ2';
 include_once '../../../estructura/cabecera.php';
 
 ?>
-<div class="container-main">
+<div class="container">
     <div class="row">
         <div class="col">
+            <div class="card bg-dark text-white rounded-3 mt-3 mb-3">
+                <div class="card-body p-4">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                            <p class="bp-2 fs-6">
+                                Crear una página php que contenga un formulario HTML que permita ingresar las horas de cursada, de la materia Programación Web Dinámica, por cada día de la semana. Enviar los datos del formulario por el método Get a otra página php que los reciba y complete un array unidimensional. Visualizar por pantalla la cantidad total de horas que se cursan por semana.
+                            </p>
+                        </blockquote>
+                    </figure>
+                </div>
+            </div>
             <form class="mb-3 needs-validation" novalidate id="form1" name="form1" method="GET" action="calcularHoras.php">
-                <h3>Horas de cursada para Programación Web Dinámica</h3>
                 <div class="row mb-3">
                     <h5>Lunes</h5>
                     <div class="col-md-4">

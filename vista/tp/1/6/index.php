@@ -5,9 +5,20 @@ $titulo = 'TP1 - EJ6';
 include_once '../../../estructura/cabecera.php';
 
 ?>
-<div class="container-main">
+<div class="container">
     <div>
-        <h3>Mostrar Datos</h3>
+        <div class="card bg-dark text-white rounded-3 mt-3 mb-3">
+            <div class="card-body p-4">
+                <figure class="mb-0">
+                    <blockquote class="blockquote">
+                        <p class="bp-2 fs-6">
+                            Modificar el formulario del ejercicio anterior para que permita seleccionar los diferentes deportes que practica (futbol, basket, tennis, voley) un alumno. Mostrar en la página que procesa el formulario la cantidad de deportes que practica.
+                        </p>
+                    </blockquote>
+                </figure>
+            </div>
+        </div>
+
         <form class="mb-3 needs-validation" novalidate id="form5" name="form5" method="get" action="mostrarDatos.php">
             <div class="col-md-4 mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
