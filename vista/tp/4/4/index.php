@@ -32,7 +32,7 @@ include_once '../../../estructura/cabecera.php';
     </form>
 </div>
 
-<script src="../../../js/validaciones.js"></script>
+
 
 <?php
 include_once '../../../estructura/pie.php';

@@ -5,6 +5,7 @@
     </div>
 </footer>
 
+<script src="../../../js/validaciones.js"></script>
 <script>
     validacion();
 </script>

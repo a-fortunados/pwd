@@ -19,8 +19,8 @@ include_once '../../../estructura/cabecera.php';
     <form class="needs-validation" novalidate id="documento" name="documento" method="post" action="accionBuscarPersona.php" onSubmit="return validarDNI();">
         <div class="col-md-4">
             <div class="form-floating mb-3">
-                <input class="form-control" id="documento" name="documento" type="text" placeholder="DNI" required>
-                <label for="DNI">Ingrese su documento</label>
+                <input class="form-control" id="nroDni" name="nroDni" type="text" placeholder="DNI" required>
+                <label for="nroDni">Ingrese su documento</label>
                 <div class="invalid-feedback">Por favor, ingrese su documento!</div>
             </div>
         </div>

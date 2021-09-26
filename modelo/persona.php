@@ -131,9 +131,7 @@ class persona
     {
         $resp = false;
         $base = new BaseDatos();
-        $sql = "UPDATE persona SET nombre ='{$this->getNombre()}' , apellido = '{$this->getApellido()}' ,
-        telefono = '{$this->getTelefono()}' , domicilio = '{$this->getDomicilio()}' , fechae_nac = '{$this->getFechaNac()}'
-        WHERE nro_dni = " . $this->getNroDni();
+        $sql = "UPDATE persona SET nombre = '{$this->getNombre()}', apellido = '{$this->getApellido()}', telefono = '{$this->getTelefono()}' , domicilio = '{$this->getDomicilio()}' , fecha_nac = '{$this->getFechaNac()}' WHERE nro_dni = '" . $this->getNroDni() . "'";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 $resp = true;
