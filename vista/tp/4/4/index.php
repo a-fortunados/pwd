@@ -16,12 +16,11 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </div>
 
-    <form class="needs-validation" novalidate id="tp4ej4" name="tp4ej4" method="post" action="accionBuscarAuto.php" onclick="return validarPatente();">
+    <form id="tp4ej4" name="tp4ej4" method="post" action="accionBuscarAuto.php" data-toggle="validator">
         <div class="col-md-4">
             <div class="form-floating mb-3">
-                <input class="form-control" id="patente" name="patente" type="text" placeholder="patente" required>
+                <input class="form-control" id="patente" name="patente" type="text" placeholder="ABC 123" required>
                 <label for="patente">Ingrese una patente</label>
-                <div class="invalid-feedback">Por favor, ingrese una patente!</div>
             </div>
         </div>
         <div class="col-md-4">

@@ -16,51 +16,54 @@ $dni = $datos["nroDni"];
     ];
 
     $personaEncontrada = $abmPersona->buscar($arrayPersona);
+    $apellido = $personaEncontrada[0]->getApellido();
+    $nombre = $personaEncontrada[0]->getNombre();
+    $fechaNac = $personaEncontrada[0]->getFechaNac();
+    $domicilio = $personaEncontrada[0]->getDomicilio();
+    $telefono = $personaEncontrada[0]->getTelefono();
 
     if (count($personaEncontrada) <= 0) {
         echo "<h3>El DNI ingresado no se encuentra registrado</h3>";
     } else {
-        echo "<form class='needs-validation' novalidate id='formPersona' name='formPersona' method='post' action='actualizarDatosPersona.php' onsubmit='return validarPersona();'>
+        echo "<form id='tp4ej9action' name='tp4ej9action' method='post' action='actualizarDatosPersona.php'>
         <div class='col-md-4'>
             <div class='form-floating mb-3'>
-                <input class='form-control' id='nroDni' name='nroDni' type='number' maxlength='8' minlength='7' readonly value='$dni' required>
-                <label for='nroDni'>Ingrese su DNI</label>
-                <div class='invalid-feedback'>Por favor, ingrese su DNI, sin puntos!</div>
+            <h3>DNI: $dni</h3>
             </div>
         </div>
         <div class='col-md-4'>
             <div class='form-floating mb-3'>
-                <input class='form-control' id='apellido' name='apellido' type='text' placeholder='Apellido' required>
+                <input class='form-control' id='nroDni' name='nroDni' type='hidden' value='$dni'>
+            </div>
+        </div>
+        <div class='col-md-4'>
+            <div class='form-floating mb-3'>
+                <input class='form-control' id='apellido' name='apellido' type='text' value='$apellido' required>
                 <label for='apellido'>Ingrese su apellido</label>
-                <div class='invalid-feedback'>Por favor, ingrese su apellido!</div>
             </div>
         </div>
         <div class='col-md-4'>
             <div class='form-floating mb-3'>
-                <input class='form-control' id='nombre' name='nombre' type='text' placeholder='Nombre' required>
+                <input class='form-control' id='nombre' name='nombre' type='text' value='$nombre' required>
                 <label for='nombre'>Ingrese su nombre</label>
-                <div class='invalid-feedback'>Por favor, ingrese su nombre!</div>
             </div>
         </div>
         <div class='col-md-4'>
             <div class='form-floating mb-3'>
-                <input class='form-control' id='fechaNac' name='fechaNac' type='date' placeholder='Fecha de Nacimiento' required>
+                <input class='form-control' id='fechaNac' name='fechaNac' type='date' value='$fechaNac' required>
                 <label for='fechaNac'>Ingrese su fecha de nacimiento</label>
-                <div class='invalid-feedback'>Por favor, ingrese su fecha de nacimiento!</div>
             </div>
         </div>
         <div class='col-md-4'>
             <div class='form-floating mb-3'>
-                <input class='form-control' id='telefono' name='telefono' type='number' placeholder='Teléfono' required>
+                <input class='form-control' id='telefono' name='telefono' type='text' value='$telefono' required>
                 <label for='telefono'>Ingrese su teléfono</label>
-                <div class='invalid-feedback'>Por favor, ingrese su teléfono!</div>
             </div>
         </div>
         <div class='col-md-4'>
             <div class='form-floating mb-3'>
-                <input class='form-control' id='domicilio' name='domicilio' type='text' placeholder='Domicilio' required>
+                <input class='form-control' id='domicilio' name='domicilio' type='text' value='$domicilio' required>
                 <label for='domicilio'>Ingrese su domicilio</label>
-                <div class='invalid-feedback'>Por favor, ingrese su domicilio!</div>
             </div>
         </div>
         <div class='col-md-4 mb-3'>

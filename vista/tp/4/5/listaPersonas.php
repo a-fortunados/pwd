@@ -37,12 +37,11 @@ if (count($lista) <= 0) {
 }
 ?>
 
-<form class="needs-validation" novalidate id="nroDni" name="nroDni" method="post" action="autosPersona.php" onclick="return validarPatente();">
+<form id="tp4ej5" name="tp4ej5" method="post" action="autosPersona.php" data-toggle="validator">
         <div class="col-md-4">
             <div class="form-floating mb-3">
                 <input class="form-control" id="nroDni" name="nroDni" type="text" placeholder="DNI" required>
                 <label for="patente">Ingrese un DNI</label>
-                <div class="invalid-feedback">Por favor, ingrese un DNI!</div>
             </div>
         </div>
         <div class="col-md-4">

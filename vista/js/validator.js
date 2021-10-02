@@ -313,8 +313,10 @@
 //     return exito;
 // }
 
+
+//EJERCICIO 4 - TP 4
 $(document).ready(function() {
-    $('#tp4_eje2').bootstrapValidator({
+    $('#tp4ej4').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -322,7 +324,7 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            Patente: {
+            patente: {
                 validators: {
                     notEmpty: {
                         message: ' Debe ingresar una patente'
@@ -337,7 +339,33 @@ $(document).ready(function() {
     });
 });
 
-//EJERCICIO 6 - TP4
+//EJERCICIO 5 - TP 4
+$(document).ready(function() {
+    $('#tp4ej5').bootstrapValidator({
+        message: 'Este valor no es valido',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            nroDni: {
+                message: 'Este valor no es valido',
+                validators: {
+                    notEmpty: {
+                        message: 'El DNI es obligatorio'
+                    },
+                    regexp: {
+                        regexp: /^\d{8}$/,
+                        message: 'Debe ingresar 8 dígitos.'
+                    }
+                }
+            }
+        }
+    })
+});
+
+//EJERCICIO 6 - TP 4
 $(document).ready(function() {
     $('#tp4ej6').bootstrapValidator({
         message: 'Este valor no es valido',
@@ -409,9 +437,9 @@ $(document).ready(function() {
     });
 });
 
-//EJERCICIO 5 - TP4
+//EJERCICIO 7 - TP 4
 $(document).ready(function() {
-    $('#tp4_eje5').bootstrapValidator({
+    $('#tp4ej7').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -419,30 +447,68 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            Patente: {
+            patente: {
                 validators: {
                     notEmpty: {
-                        message: ' Ingrese una patente'
+                        message: ' Debe ingresar una patente'
                     },
                     regexp: {
                         regexp: /^[A-ZÑ]{3}\s\d{3}$/,
-                        message: ' Formato: LLL NNN.'
+                        message: 'Debe ser con este formato: LLL NNN.'
                     }
                 }
             },
-            Marca: {
-                message: 'Apellido no valido',
+            marca: {
                 validators: {
                     notEmpty: {
-                        message: ' Ingrese una marca'
+                        message: 'Debe ingresar una marca'
+                    },
+                    regexp: {
+                        regexp: /[A-Za-z]+/,
+                        message: 'Debe ser una marca valida'
                     }
                 }
             },
-            DniDuenio: {
-                message: 'Dni no valido',
+            modelo: {
                 validators: {
                     notEmpty: {
-                        message: ' El Dni es obligatorio'
+                        message: 'Debe ingresar un modelo'
+                    },
+                    regexp: {
+                        regexp: /\d{4}/,
+                        message: 'Debe ser con el formato: AAAA'
+                    }
+                }
+            },
+            dniDuenio: {
+                validators: {
+                    notEmpty: {
+                        message: 'Debe ingresar un DNI'
+                    },
+                    regexp: {
+                        regexp: /^\d{8}$/,
+                        message: 'Debe ingresar 8 dígitos.'
+                    }
+                }
+            }
+        },
+    });
+});
+
+//EJERCICIO 8 - TP 4
+$(document).ready(function() {
+    $('#tp4ej8').bootstrapValidator({
+        message: 'Este valor no es valido',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            nroDni: {
+                validators: {
+                    notEmpty: {
+                        message: 'Debe ingresar un DNI'
                     },
                     regexp: {
                         regexp: /^\d{8}$/,
@@ -450,73 +516,24 @@ $(document).ready(function() {
                     }
                 }
             },
-            Modelo: {
-                validators: {
-                    notEmpty: {
-                        message: ' Ingrese un modelo'
-                    }
-                }
-            }
-        },
-    });
-});
-
-//EJERCICIO 6 - TP4
-$(document).ready(function() {
-    $('#tp4_eje6').bootstrapValidator({
-        message: 'Este valor no es valido',
-        feedbackIcons: {
-            valid: 'glyphicon glyphicon-ok',
-            invalid: 'glyphicon glyphicon-remove',
-            validating: 'glyphicon glyphicon-refresh'
-        },
-        fields: {
-            Patente: {
+            patente: {
                 validators: {
                     notEmpty: {
                         message: ' Debe ingresar una patente'
                     },
                     regexp: {
                         regexp: /^[A-ZÑ]{3}\s\d{3}$/,
-                        message: ' Formato: LLL NNN.'
-                    }
-                }
-            },
-            DniDuenio: {
-                message: 'Dni no valido',
-                validators: {
-                    notEmpty: {
-                        message: ' El Dni es obligatorio'
-                    },
-                    regexp: {
-                        regexp: /^\d{8}$/,
-                        message: ' Debe ingresar 8 dígitos.'
-                    }
-                }
-            },
-            Dnicambio: {
-                message: 'Dni no valido',
-                validators: {
-                    notEmpty: {
-                        message: ' El Dni es obligatorio'
-                    },
-                    regexp: {
-                        regexp: /^\d{8}$/,
-                        message: ' Debe ingresar 8 dígitos.'
-                    },
-                    different: {
-                        field: 'DniDuenio',
-                        message: ' Debe ser distinto al dni del dueño'
+                        message: 'Debe ser con este formato: LLL NNN.'
                     }
                 }
             }
-        },
+        }
     });
 });
 
-//EJERCICIO 7 - TP4
+//EJERCICIO 9 - TP4
 $(document).ready(function() {
-    $('#tp4_eje7').bootstrapValidator({
+    $('#tp4ej9').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
             valid: 'glyphicon glyphicon-ok',
@@ -524,14 +541,74 @@ $(document).ready(function() {
             validating: 'glyphicon glyphicon-refresh'
         },
         fields: {
-            NroDni: {
+            nroDni: {
                 validators: {
                     notEmpty: {
-                        message: ' El Dni es obligatorio'
+                        message: 'Debe ingresar un DNI'
                     },
                     regexp: {
                         regexp: /^\d{8}$/,
-                        message: ' Debe ingresar 8 dígitos.'
+                        message: 'Debe ingresar 8 dígitos.'
+                    }
+                }
+            }
+        }
+    });
+});
+
+//ACCION EJERCICIO 9 - TP 4
+$(document).ready(function() {
+    $('#tp4ej9action').bootstrapValidator({
+        message: 'Este valor no es valido',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            nombre: {
+                message: 'Nombre no valido',
+                validators: {
+                    notEmpty: {
+                        message: 'El nombre es obligatorio'
+                    },
+                    regexp: {
+                        regexp: /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/,
+                        message: 'La primer letra en mayúscula. Solo letras.'
+                    }
+                }
+            },
+            apellido: {
+                message: 'Apellido no valido',
+                validators: {
+                    notEmpty: {
+                        message: 'El apellido es obligatorio'
+                    },
+                    regexp: {
+                        regexp: /^([A-ZÁÉÍÓÚ]{1}[a-zñáéíóú]+[\s]*)+$/,
+                        message: 'La primer letra en mayúscula. Solo letras.'
+                    }
+                }
+            },
+            domicilio: {
+                message: 'Domicilio invalido',
+                validators: {
+                    notEmpty: {
+                        message: 'Se requiere un domicilio'
+                    }
+                }
+            },
+            fechaNac: {
+                validators: {
+                    notEmpty: {
+                        message: 'Debe ingresar una fecha'
+                    }
+                }
+            },
+            telefono: {
+                validators: {
+                    notEmpty: {
+                        message: 'Ingrese nro de teléfono'
                     }
                 }
             }

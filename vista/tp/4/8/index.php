@@ -16,19 +16,17 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </div>
 
-    <form class="needs-validation" novalidate id="patente-documento" name="patente-documento" method="post" action="accionCambioDuenio.php" onsubmit="return validarCambio();">
+    <form id="tp4ej8" name="tp4ej8" method="post" action="accionCambioDuenio.php">
         <div class="col-md-4">
             <div class="form-floating mb-3">
                 <input class="form-control" id="patente" name="patente" type="text" placeholder="patente" required>
                 <label for="patente">Ingrese una patente</label>
-                <div class="invalid-feedback">Por favor, ingrese una patente!</div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="form-floating mb-3">
                 <input class="form-control" id="nroDni" name="nroDni" type="text" placeholder="DNI" required>
                 <label for="DNI">Ingrese su documento</label>
-                <div class="invalid-feedback">Por favor, ingrese su documento!</div>
             </div>
         </div>
         <div class="col-md-4">
@@ -38,8 +36,6 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </form>
 </div>
-
-<script src="../../../js/validaciones.js"></script>
 
 <?php
 include_once '../../../estructura/pie.php';
