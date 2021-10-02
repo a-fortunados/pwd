@@ -1,9 +1,6 @@
 <?php
 $titulo = "TP4 - EJ4";
 include_once "../../../estructura/cabecera.php";
-include_once '../../../../modelo/conector/base_datos.php';
-include_once '../../../../modelo/auto.php';
-include "../../../../control/4/abm_auto.php";
 ?>
 
 <div class="container mt-3">

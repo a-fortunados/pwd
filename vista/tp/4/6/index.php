@@ -16,12 +16,11 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </div>
 
-    <form class="needs-validation" novalidate id="formPersona" name="formPersona" method="post" action="accionNuevaPersona.php" onsubmit="return validarPersona();">
+    <form id="tp4ej6" name="tp4ej6" method="post" action="accionNuevaPersona.php" data-toggle="validator">
         <div class="col-md-4">
             <div class="form-floating mb-3">
-                <input class="form-control" id="nroDni" name="nroDni" type="number" maxlength="8" minlength="7" placeholder="DNI" required>
+                <input class="form-control" id="nroDni" name="nroDni" type="text" maxlength="8" minlength="7" placeholder="DNI" required>
                 <label for="nroDni">Ingrese su DNI</label>
-                <div class="invalid-feedback">Por favor, ingrese su DNI, sin puntos!</div>
             </div>
         </div>
         <div class="col-md-4">
@@ -47,7 +46,7 @@ include_once '../../../estructura/cabecera.php';
         </div>
         <div class="col-md-4">
             <div class="form-floating mb-3">
-                <input class="form-control" id="telefono" name="telefono" type="number" placeholder="Teléfono" required>
+                <input class="form-control" id="telefono" name="telefono" type="text" placeholder="Teléfono" required>
                 <label for="telefono">Ingrese su teléfono</label>
                 <div class="invalid-feedback">Por favor, ingrese su teléfono!</div>
             </div>
@@ -66,8 +65,6 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </form>
 </div>
-
-<script src="../../../js/validaciones.js"></script>
 
 <?php
 include_once '../../../estructura/pie.php';

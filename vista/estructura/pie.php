@@ -5,14 +5,15 @@
     </div>
 </footer>
 
-<script src="../../../js/validaciones.js"></script>
-<script>
+<!-- <script>
     validacion();
-</script>
-<script src="../../../js/bootstrap.bundle.min.js"></script>
+</script> -->
+<script src="../../../js/jquery-3.6.0.slim.min.js"></script>
 <script src="../../../js/bootstrap.bundle.js"></script>
+<script src="../../../js/bootstrap.bundle.min.js"></script>
 <script src="../../../js/bootstrap.min.js"></script>
-
+<script src="../../../js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="../../../js/validator.js"></script>
 </body>
 
 </html>

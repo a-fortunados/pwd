@@ -1,9 +1,6 @@
 <?php
 $titulo = "TP4 - EJ6";
 include_once "../../../estructura/cabecera.php";
-include_once '../../../../modelo/conector/base_datos.php';
-include_once '../../../../modelo/persona.php';
-include "../../../../control/4/abm_persona.php";
 
 $control = new AbmPersona();
 ?>
