@@ -1,3 +1,7 @@
+<?php
+include_once "../../../../configuracion.php";
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -9,8 +13,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../../../css/bootstrap.min.css">
     <link rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/boostrapValidator.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
-    <script type="text/javascript" src="../../../js/validacion.js"></script>
+    <!-- <script type="text/javascript" src="../../../js/validacion.js"></script> -->
 
     <!-- Cabecera redirect index php htdocs -->
     <title><?php echo $titulo; ?></title>

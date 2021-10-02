@@ -1,10 +1,6 @@
 <?php
 $titulo = "TP3 - EJ3";
 include_once '../../../estructura/cabecera.php';
-include_once '../../../../modelo/conector/base_datos.php';
-include_once '../../../../modelo/persona.php';
-include_once '../../../../control/4/abm_persona.php';
-
 ?>
 
 <div class="container mt-3">

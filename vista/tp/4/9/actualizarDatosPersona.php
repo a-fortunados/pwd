@@ -1,12 +1,6 @@
 <?php
 $titulo = "TP4 - EJ9";
 include_once "../../../estructura/cabecera.php";
-include_once '../../../../modelo/conector/base_datos.php';
-include_once '../../../../modelo/auto.php';
-include_once "../../../../control/4/abm_auto.php";
-include_once "../../../../modelo/persona.php";
-include_once "../../../../control/4/abm_persona.php";
-include_once "../../../../util/funciones.php";
 
 $datos = data_submitted();
 

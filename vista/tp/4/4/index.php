@@ -16,7 +16,7 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </div>
 
-    <form class="needs-validation" novalidate id="patente" name="patente" method="post" action="accionBuscarAuto.php" onclick="return validarPatente();">
+    <form class="needs-validation" novalidate id="tp4ej4" name="tp4ej4" method="post" action="accionBuscarAuto.php" onclick="return validarPatente();">
         <div class="col-md-4">
             <div class="form-floating mb-3">
                 <input class="form-control" id="patente" name="patente" type="text" placeholder="patente" required>
