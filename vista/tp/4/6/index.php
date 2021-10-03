@@ -27,35 +27,30 @@ include_once '../../../estructura/cabecera.php';
             <div class="form-floating mb-3">
                 <input class="form-control" id="apellido" name="apellido" type="text" placeholder="Apellido" required>
                 <label for="apellido">Ingrese su apellido</label>
-                <div class="invalid-feedback">Por favor, ingrese su apellido!</div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="form-floating mb-3">
                 <input class="form-control" id="nombre" name="nombre" type="text" placeholder="Nombre" required>
                 <label for="nombre">Ingrese su nombre</label>
-                <div class="invalid-feedback">Por favor, ingrese su nombre!</div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="form-floating mb-3">
                 <input class="form-control" id="fechaNac" name="fechaNac" type="date" placeholder="Fecha de Nacimiento" required>
                 <label for="fechaNac">Ingrese su fecha de nacimiento</label>
-                <div class="invalid-feedback">Por favor, ingrese su fecha de nacimiento!</div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="form-floating mb-3">
                 <input class="form-control" id="telefono" name="telefono" type="text" placeholder="Teléfono" required>
                 <label for="telefono">Ingrese su teléfono</label>
-                <div class="invalid-feedback">Por favor, ingrese su teléfono!</div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="form-floating mb-3">
                 <input class="form-control" id="domicilio" name="domicilio" type="text" placeholder="Domicilio" required>
                 <label for="domicilio">Ingrese su domicilio</label>
-                <div class="invalid-feedback">Por favor, ingrese su domicilio!</div>
             </div>
         </div>
         <div class="col-md-4 mb-3">

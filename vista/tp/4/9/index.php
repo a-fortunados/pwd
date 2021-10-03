@@ -16,12 +16,11 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </div>
 
-    <form class="needs-validation" novalidate id="documento" name="documento" method="post" action="accionBuscarPersona.php" onSubmit="return validarDNI();">
+    <form id="tp4ej9" name="tp4ej9" method="post" action="accionBuscarPersona.php">
         <div class="col-md-4">
             <div class="form-floating mb-3">
-                <input class="form-control" id="nroDni" name="nroDni" type="text" placeholder="DNI" required>
+                <input class="form-control" id="nroDni" name="nroDni" type="text" placeholder="DNI" maxlength="8" required>
                 <label for="nroDni">Ingrese su documento</label>
-                <div class="invalid-feedback">Por favor, ingrese su documento!</div>
             </div>
         </div>
         <div class="col-md-4">
@@ -31,8 +30,6 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </form>
 </div>
-
-<script src="../../../js/validaciones.js"></script>
 
 <?php
 include_once '../../../estructura/pie.php';
