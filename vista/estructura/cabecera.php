@@ -7,9 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link type="text/css" rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/bootstrap/boostrapValidator.min.css">
+    <link type="text/css" rel="stylesheet" href="../../../css/styles.css">
+    <link rel="stylesheet" href="../../../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/bootstrap/boostrapValidator.min.css">
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
@@ -22,7 +22,7 @@
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <div class="container-fluid">
-                <a class="navbar-brand" href="../home/index.php">Inicio</a>
+                <a class="navbar-brand" href="../../../home/home2/home3/index.php">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -33,14 +33,14 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Práctico 1</a>
 
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="../tp/1/1">Ejercicio 1</a></li>
-                                <li><a class="dropdown-item" href="../tp/1/2">Ejercicio 2</a></li>
-                                <li><a class="dropdown-item" href="../tp/1/3">Ejercicio 3</a></li>
-                                <li><a class="dropdown-item" href="../tp/1/4">Ejercicio 4</a></li>
-                                <li><a class="dropdown-item" href="../tp/1/5">Ejercicio 5</a></li>
-                                <li><a class="dropdown-item" href="../tp/1/6">Ejercicio 6</a></li>
-                                <li><a class="dropdown-item" href="../tp/1/7">Ejercicio 7</a></li>
-                                <li><a class="dropdown-item" href="../tp/1/8">Ejercicio 8</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/1/1">Ejercicio 1</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/1/2">Ejercicio 2</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/1/3">Ejercicio 3</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/1/4">Ejercicio 4</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/1/5">Ejercicio 5</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/1/6">Ejercicio 6</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/1/7">Ejercicio 7</a></li>
+                                <li><a class="dropdown-item" href="../../../tp/1/8">Ejercicio 8</a></li>
                             </ul>
                         </li>
 
@@ -79,7 +79,7 @@
 
         <main role="main">
         <?php
-include_once '../../configuracion.php';
+include_once '../../../../configuracion.php';
 ?>
         </main>
     </header>
