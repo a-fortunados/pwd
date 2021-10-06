@@ -35,6 +35,13 @@ include_once '../../../estructura/cabecera.php';
             <li>MySQL</li>
         </ul>
     </p>
+
+    <p class="ms-4">
+        <b>IDE utilizado:</b>
+        <ul class="ms-4">
+            <li>Visual Studio Code</li>
+        </ul>
+    </p>
 </body>
 
 <?php

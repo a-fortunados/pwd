@@ -5,11 +5,11 @@ class AbmRol
     private function cargarObjeto($parametro)
     {
         $rol = null;
-        if (array_key_exists('idrol', $parametro) && array_key_exists('rodescripcion', $parametro)) {
+        if (array_key_exists('id_rol', $parametro) && array_key_exists('rol_descripcion', $parametro)) {
             $rol = new rol();
             $rol->setear(
-                $parametro['idrol'],
-                $parametro['rodescripcion'],
+                $parametro['id_rol'],
+                $parametro['rol_descripcion'],
             );
         }
         return $rol;
@@ -18,9 +18,9 @@ class AbmRol
     private function cargarObjetoConClave($parametro)
     {
         $objRol = null;
-        if (isset($parametro['idrol'])) {
+        if (isset($parametro['id_rol'])) {
             $objRol = new rol();
-            $objRol->setear($parametro['idrol'], null);
+            $objRol->setear($parametro['id_rol'], null);
         }
         return $objRol;
     }
@@ -73,12 +73,12 @@ class AbmRol
     {
         $where = " true ";
         if ($param != null) {
-            if (isset($param['idrol'])) {
-                $where .= " and idrol = '" . $param['idrol'] . "'";
+            if (isset($param['id_rol'])) {
+                $where .= " and id_rol = '" . $param['id_rol'] . "'";
             }
 
-            if (isset($param['rodescripcion'])) {
-                $where .= " and rodescripcion = '" . $param['rodescripcion'] . "'";
+            if (isset($param['rol_descripcion'])) {
+                $where .= " and rol_descripcion = '" . $param['rol_descripcion'] . "'";
             }
         }
         $arreglo = rol::listar($where);

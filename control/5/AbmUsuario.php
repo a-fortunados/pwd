@@ -5,14 +5,14 @@ class AbmUsuario
     private function cargarObjeto($parametro)
     {
         $usuario = null;
-        if (array_key_exists('idusuario', $parametro) && array_key_exists('usnombre', $parametro) && array_key_exists('uspass', $parametro) && array_key_exists('usmail', $parametro) && array_key_exists('usdeshabilitado', $parametro)) {
+        if (array_key_exists('id_usuario', $parametro) && array_key_exists('usuario_nombre', $parametro) && array_key_exists('usuario_password', $parametro) && array_key_exists('usuario_email', $parametro) && array_key_exists('usuario_deshabilitado', $parametro)) {
             $usuario = new usuario();
             $usuario->setear(
-                $parametro['idusuario'],
-                $parametro['usnombre'],
-                $parametro['uspass'],
-                $parametro['usmail'],
-                $parametro['usdeshabilitado']
+                $parametro['id_usuario'],
+                $parametro['usuario_nombre'],
+                $parametro['usuario_pass'],
+                $parametro['usuario_email'],
+                $parametro['usuario_deshabilitado']
             );
         }
         return $usuario;
@@ -21,9 +21,9 @@ class AbmUsuario
     private function cargarObjetoConClave($parametro)
     {
         $objUsuario = null;
-        if (isset($parametro['idusuario'])) {
+        if (isset($parametro['id_usuario'])) {
             $objUsuario = new usuario();
-            $objUsuario->setear($parametro['idusuario'], null, null, null, null);
+            $objUsuario->setear($parametro['id_usuario'], null, null, null, null);
         }
         return $objUsuario;
     }
@@ -76,24 +76,24 @@ class AbmUsuario
     {
         $where = " true ";
         if ($param != null) {
-            if (isset($param['idusuario'])) {
-                $where .= " and idusuario = '" . $param['idusuario'] . "'";
+            if (isset($param['id_usuario'])) {
+                $where .= " and id_usuario = '" . $param['id_usuario'] . "'";
             }
 
-            if (isset($param['usnombre'])) {
-                $where .= " and usnombre = '" . $param['usnombre'] . "'";
+            if (isset($param['usuario_nombre'])) {
+                $where .= " and usuario_nombre = '" . $param['usuario_nombre'] . "'";
             }
 
-            if (isset($param['uspass'])) {
-                $where .= " and uspass ='" . $param['uspass'] . "'";
+            if (isset($param['usuario_password'])) {
+                $where .= " and usuario_password ='" . $param['usuario_password'] . "'";
             }
 
-            if (isset($param['usmail'])) {
-                $where .= " and usmail = '" . $param['usmail'] . "'";
+            if (isset($param['usuario_email'])) {
+                $where .= " and usuario_email = '" . $param['usuario_email'] . "'";
             }
 
-            if (isset($param['usdesabilitado'])) {
-                $where .= " and usdesabilitado = '" . $param['usdesabilitado'] . "'";
+            if (isset($param['usuario_desabilitado'])) {
+                $where .= " and usuario_desabilitado = '" . $param['usuario_desabilitado'] . "'";
             }
         }
         $arreglo = usuario::listar($where);
