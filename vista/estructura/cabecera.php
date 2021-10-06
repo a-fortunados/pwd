@@ -72,6 +72,14 @@
                                 <li><a class="dropdown-item" href="../../../tp/4/9">Ejercicio 9</a></li>
                             </ul>
                         </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Trabajo Práctico 5</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Ejercicio 4.1</a></li>
+                                <li><a class="dropdown-item" href="#">Ejercicio 4.2</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
