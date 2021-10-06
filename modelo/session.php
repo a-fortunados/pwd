@@ -60,7 +60,7 @@ class Session
         if ($listaUsuarios >= 1) {
             if ($this->activa()) {
                 $_SESSION['id_usuario'] = $listaUsuarios[0]->getIdUsuario();
-                $_SESSION['usuario_nombre'] = $listaUsuarios[0]->getUsNombre();
+                $_SESSION['usuario_nombre'] = $listaUsuarios[0]->getUsuarioNombre();
             }
         }
         return $_SESSION;

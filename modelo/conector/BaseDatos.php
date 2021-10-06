@@ -11,6 +11,7 @@ class BaseDatos extends PDO
     private $conec;
     private $indice;
     private $resultado;
+    // private $cantFilasResultado;
 
     public function __construct()
     {
