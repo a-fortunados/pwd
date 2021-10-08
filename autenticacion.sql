@@ -42,9 +42,9 @@ CREATE TABLE `rol` (
 CREATE TABLE `usuario` (
   `id_usuario` bigint(20) NOT NULL,
   `usuario_nombre` varchar(50) NOT NULL,
-  `usuario_pass` int(11) NOT NULL,
+  `usuario_pass` varchar(50) NOT NULL,
   `usuario_email` varchar(50) NOT NULL,
-  `usuario_deshabilitado` timestamp NULL DEFAULT NULL
+  `usuario_deshabilitado` BOOLEAN DEFAULT FALSE
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------

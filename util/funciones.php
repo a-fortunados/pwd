@@ -36,6 +36,7 @@ spl_autoload_register(function ($clase) {
         $_SESSION['ROOT'] . 'control/2/',
         $_SESSION['ROOT'] . 'control/3/',
         $_SESSION['ROOT'] . 'control/4/',
+        $_SESSION['ROOT'] . 'control/5/',
         //  $GLOBALS['ROOT'].'util/class/',
     );
     //print_r($directorys) ;

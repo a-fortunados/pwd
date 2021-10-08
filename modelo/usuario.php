@@ -79,7 +79,7 @@ class usuario
     public function cargar()
     {
         $resp = false;
-        $base = new BaseDatosUsuarios();
+        $base = new BaseDatos();
         $sql = "SELECT * FROM 'usuario' WHERE idUsuario = " . $this->getIdUsuario();
         if ($base->Iniciar()) {
             $res = $base->Ejecutar($sql);
@@ -87,11 +87,11 @@ class usuario
                 if ($res > 0) {
                     $row = $base->Registro();
                     $this->setear(
-                        $row['idUsuario'],
-                        $row['usnombre'],
-                        $row['usuarioPassword'],
-                        $row['usuarioEmail'],
-                        $row['usuarioDeshabilitado']
+                        $row['id_usuario'],
+                        $row['usuario_nombre'],
+                        $row['usuario_pass'],
+                        $row['usuario_email'],
+                        $row['usuario_deshabilitado']
                     );
                 }
             }
@@ -104,8 +104,8 @@ class usuario
     public function modificar()
     {
         $resp = false;
-        $base = new BaseDatosUsuarios();
-        $sql = "UPDATE usuario SET usuarioNombre = '{$this->getUsuarioNombre()}', usuarioPassword = '{$this->getUsuarioPassword()}' ,usuarioEmail = {$this->getUsuarioEmail()} WHERE idUsuario = '" . $this->getIdUsuario() . "'";
+        $base = new BaseDatos();
+        $sql = "UPDATE usuario SET usuario_nombre = '{$this->getUsuarioNombre()}', usuario_pass = '{$this->getUsuarioPassword()}', usuario_email = '{$this->getUsuarioEmail()}', usuario_deshabilitado = {$this->getUsuarioDeshabilitado()} WHERE id_usuario = '{$this->getIdUsuario()}'";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 $resp = true;
@@ -121,8 +121,8 @@ class usuario
     public function eliminar()
     {
         $resp = false;
-        $base = new BaseDatosUsuarios();
-        $sql = "DELETE FROM 'usuario' WHERE idUsuario = '" . $this->getIdUsuario() . "'";
+        $base = new BaseDatos();
+        $sql = "DELETE FROM 'usuario' WHERE id_usuario = '" . $this->getIdUsuario() . "'";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 return true;
@@ -138,7 +138,7 @@ class usuario
     public static function listar($parametro = "")
     {
         $arreglo = array();
-        $base = new BaseDatosUsuarios();
+        $base = new BaseDatos();
         $sql = "SELECT * FROM usuario ";
         if ($parametro != "") {
             $sql .= 'WHERE ' . $parametro;
@@ -149,11 +149,11 @@ class usuario
                 while ($row = $base->Registro()) {
                     $objUsuario = new usuario();
                     $objUsuario->setear(
-                        $row['idUsuario'],
-                        $row['usuarioNombre'],
-                        $row['usuarioPassword'],
-                        $row['usuarioEmail'],
-                        $row['usuarioDeshabilitado']
+                        $row['id_usuario'],
+                        $row['usuario_nombre'],
+                        $row['usuario_pass'],
+                        $row['usuario_email'],
+                        $row['usuario_deshabilitado']
                     );
                     array_push($arreglo, $objUsuario);
                 }
@@ -167,8 +167,8 @@ class usuario
     public function insertar()
     {
         $resp = false;
-        $base = new BaseDatosUsuarios();
-        $sql = "INSERT INTO usuario (usuarioNombre, usuarioPassword, usuarioEmail) VALUES('" . $this->getUsuarioNombre() . "', '" . $this->getUsuarioPassword() . "' , '" . $this->getUsuarioEmail() . "')";
+        $base = new BaseDatos();
+        $sql = "INSERT INTO usuario (usuario_nombre, usuario_password, usuario_email) VALUES('" . $this->getUsuarioNombre() . "', '" . $this->getUsuarioPassword() . "' , '" . $this->getUsuarioEmail() . "')";
         if ($base->Iniciar()) {
             if ($elid = $base->Ejecutar($sql)) {
                 $this->setIdUsuario($elid);
