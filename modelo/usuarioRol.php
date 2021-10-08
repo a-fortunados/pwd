@@ -76,17 +76,17 @@ class UsuarioRol
 
                     if ($row['id_rol'] != null) {
                         $objRol = new Rol();
-                        $objRol->setId($row['idrol']);
+                        $objRol->setIdRol($row['idrol']);
                         $objRol->cargar();
                     }
 
                     if ($row['id_usuario'] != null) {
 
                         $objUsuario = new Usuario();
-                        $objUsuario->setId($row['id_usuario']);
+                        $objUsuario->setIdUsuario($row['id_usuario']);
                         $objUsuario->cargar();
                     }
-                    $this->setear($objPersona, $objRol);
+                    $this->setear($objUsuario, $objRol);
                 }
             }
         } else {

@@ -28,7 +28,7 @@ class rol
     {
         $this->idRol = $idRol;
     }
-    public function setRodescripcion($rolDescripcion)
+    public function setRolDescripcion($rolDescripcion)
     {
         $this->rolDescripcion = $rolDescripcion;
     }
@@ -46,7 +46,7 @@ class rol
     public function cargar()
     {
         $resp = false;
-        $base = new BaseDatosUsuarios();
+        $base = new BaseDatos();
         $sql = "SELECT * FROM 'rol' WHERE id_rol = " . $this->getIdRol();
         if ($base->Iniciar()) {
             $res = $base->Ejecutar($sql);
@@ -68,7 +68,7 @@ class rol
     public function modificar()
     {
         $resp = false;
-        $base = new BaseDatosUsuarios();
+        $base = new BaseDatos();
         $sql = "UPDATE rol SET rol_descripcion = '{$this->getRolDescripcion()}' WHERE id_rol = '" . $this->getIdRol() . "'";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
@@ -85,7 +85,7 @@ class rol
     public function eliminar()
     {
         $resp = false;
-        $base = new BaseDatosUsuarios();
+        $base = new BaseDatos();
         $sql = "DELETE FROM 'rol' WHERE id_rol = '" . $this->getIdRol() . "'";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
@@ -102,7 +102,7 @@ class rol
     public static function listar($parametro = "")
     {
         $arreglo = array();
-        $base = new BaseDatosUsuarios();
+        $base = new BaseDatos();
         $sql = "SELECT * FROM rol ";
         if ($parametro != "") {
             $sql .= 'WHERE ' . $parametro;
@@ -128,7 +128,7 @@ class rol
     public function insertar()
     {
         $resp = false;
-        $base = new BaseDatosUsuarios();
+        $base = new BaseDatos();
         $sql = "INSERT INTO rol (rol_descripcion) VALUES('" . $this->getRolDescripcion() . "')";
         if ($base->Iniciar()) {
             if ($elid = $base->Ejecutar($sql)) {
@@ -142,5 +142,4 @@ class rol
         }
         return $resp;
     }
-
 }

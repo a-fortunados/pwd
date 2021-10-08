@@ -10,7 +10,7 @@ class AbmUsuario
             $usuario->setear(
                 $parametro['id_usuario'],
                 $parametro['usuario_nombre'],
-                $parametro['usuario_pass'],
+                $parametro['usuario_password'],
                 $parametro['usuario_email'],
                 $parametro['usuario_deshabilitado']
             );
@@ -64,8 +64,8 @@ class AbmUsuario
         $respuesta = false;
         if ($this->seteadosCamposClaves($parametro)) {
             $objUsuario = $this->buscar($parametro);
-            //$objUsuario = $this->cargarObjeto($parametro);
-            if ($objUsuario[0] != null && $objUsuario[0]->modificar()) {
+            $objUsuario = $this->cargarObjeto($parametro);
+            if ($objUsuario != null && $objUsuario->modificar()) {
                 $respuesta = true;
             }
         }
@@ -85,15 +85,15 @@ class AbmUsuario
             }
 
             if (isset($param['usuario_password'])) {
-                $where .= " and usuario_password ='" . $param['usuario_password'] . "'";
+                $where .= " and usuario_pass ='" . $param['usuario_password'] . "'";
             }
 
             if (isset($param['usuario_email'])) {
                 $where .= " and usuario_email = '" . $param['usuario_email'] . "'";
             }
 
-            if (isset($param['usuario_desabilitado'])) {
-                $where .= " and usuario_desabilitado = '" . $param['usuario_desabilitado'] . "'";
+            if (isset($param['usuario_deshabilitado'])) {
+                $where .= " and usuario_deshabilitado = '" . $param['usuario_deshabilitado'] . "'";
             }
         }
         $arreglo = usuario::listar($where);
