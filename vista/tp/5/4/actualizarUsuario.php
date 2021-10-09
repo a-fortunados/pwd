@@ -1,12 +1,12 @@
 <?php
 include_once '../../../estructura/cabecera.php';
+$titulo = "TP5 - EJ4";
 
 $datos = data_submitted();
 $abmUsuario = new AbmUsuario();
 
 $listaUsuario = $abmUsuario->buscar($datos);
 $objUsuario = $listaUsuario[0];
-
 ?>
 
 <div class="container">
@@ -19,18 +19,18 @@ echo "<input class='form-control' id='id_usuario' name='id_usuario' type='hidden
             </div>
         </div>
 
-        <div class="form-floating mb-3">
+        <div class="form-floating col-md-4 mb-3">
                 <input class="form-control" id="usuarioNuevo" name="usuario_nombre" type="text" placeholder="Nuevo usuario" maxlength="50" required>
                 <label for="nroDni">Ingrese su nuevo usuario</label>
         </div>
 
-        <div class="form-floating mb-3">
+        <div class="form-floating col-md-4 mb-3">
                 <input class="form-control" id="emailNuevo" name="usuario_email" type="text" placeholder="Nuevo email" maxlength="254" required>
                 <label for="nroDni">Ingrese su nuevo email</label>
         </div>
 
 
-        <div class="form-floating mb-3">
+        <div class="form-floating col-md-4 mb-3">
                 <input class="form-control" id="passwordNueva" name="usuario_password" type="password" placeholder="Contraseña nueva" maxlength="16" required>
                 <label for="nroDni">Ingrese su nueva contraseña</label>
         </div>
@@ -42,3 +42,6 @@ echo "<input class='form-control' id='id_usuario' name='id_usuario' type='hidden
         </div>
     </form>
 </div>
+
+<?php
+include_once '../../../estructura/pie.php';

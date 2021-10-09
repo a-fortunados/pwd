@@ -1,5 +1,5 @@
 <?php
-$titulo = "TP5 - EJ4.1";
+$titulo = "TP5 - EJ4";
 include_once '../../../estructura/cabecera.php';
 
 $abmUsuario = new AbmUsuario();

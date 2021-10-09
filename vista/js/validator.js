@@ -1,3 +1,25 @@
+//EJERCICIO 1 - TP1
+$(document).ready(function () {
+    $('#eje1tp1').bootstrapValidator({
+        message: 'Este valor no es valido',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            enteredNumber: {
+                message: ' Número no valido',
+                validators: {
+                    notEmpty: {
+                        message: ' Ingrese un número por favor'
+                    }
+                }
+            }
+        },
+    });
+});
+
 //EJERCICIO 4 - TP 4
 $(document).ready(function() {
     $('#tp4ej4').bootstrapValidator({

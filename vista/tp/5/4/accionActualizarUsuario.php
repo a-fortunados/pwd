@@ -1,5 +1,5 @@
 <?php
-$titulo = "TP5 - EJ4-2";
+$titulo = "TP5 - EJ4";
 include_once "../../../../util/funciones.php";
 include_once "../../../../configuracion.php";
 
