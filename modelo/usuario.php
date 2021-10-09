@@ -105,7 +105,7 @@ class usuario
     {
         $resp = false;
         $base = new BaseDatos();
-        $sql = "UPDATE usuario SET usuario_nombre = '{$this->getUsuarioNombre()}', usuario_pass = '{$this->getUsuarioPassword()}', usuario_email = '{$this->getUsuarioEmail()}', usuario_deshabilitado = {$this->getUsuarioDeshabilitado()} WHERE id_usuario = '{$this->getIdUsuario()}'";
+        $sql = "UPDATE usuario SET usuario_nombre = '{$this->getUsuarioNombre()}', usuario_pass = '{$this->getUsuarioPassword()}', usuario_email = '{$this->getUsuarioEmail()}', usuario_deshabilitado = {$this->getUsuarioDeshabilitado()} WHERE id_usuario = {$this->getIdUsuario()}";
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 $resp = true;
