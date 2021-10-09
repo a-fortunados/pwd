@@ -1,6 +1,12 @@
 <?php
-$titulo = "TP2 - EJ3";
-include_once '../../../estructura/cabecera.php';
+include_once '../../../../configuracion.php';
+$sesion = new Session();
+if ($sesion->activa()) {
+    header('Location: paginaSegura.php');
+} else {
+    $titulo = "TP5 - EJ4.2";
+    include_once '../../../estructura/cabecera.php';
+}
 ?>
 <div class="container">
     <div class="card bg-dark text-white rounded-3 mt-3 mb-3">
@@ -19,7 +25,7 @@ include_once '../../../estructura/cabecera.php';
     </div>
 
     <h3 class="text-center">Member Login</h3>
-    <form class="needs-validation" novalidate name="form-ej3" action="accionPruebita.php" method="post">
+    <form class="needs-validation" novalidate name="form-ej3" action="verificarLogin.php" method="post">
         <div class="row">
             <div class="col-md-4"></div>
             <div class="form-floating col-md-4 mb-3">

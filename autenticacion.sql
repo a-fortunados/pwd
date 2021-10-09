@@ -50,8 +50,8 @@ CREATE TABLE `usuario` (
 INSERT INTO `usuario` (`id_usuario`, `usuario_nombre`, `usuario_pass`, `usuario_email`, `usuario_deshabilitado`) VALUES 
 (1, 'juan.carlos', 'espiritu', 'hola.juancarlo@comoestas.com', 0),
 (2, 'pufufifufu', 'turing', 'santiago.scantamburlo@est.fi.uncoma.edu.ar', 0),
-(2, 'jmarcosg', 'EthBtc', 'juan.gonzalez@est.fi.uncoma.edu.ar', 0),
-(2, 'rociograff', 'chocotorta', 'rocio.graff@est.fi.uncoma.edu.ar', 0);
+(3, 'jmarcosg', 'EthBtc', 'juan.gonzalez@est.fi.uncoma.edu.ar', 0),
+(4, 'rociograff', 'chocotorta', 'rocio.graff@est.fi.uncoma.edu.ar', 0);
 
 -- --------------------------------------------------------
 

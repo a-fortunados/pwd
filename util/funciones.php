@@ -30,14 +30,13 @@ function verEstructura($e)
 spl_autoload_register(function ($clase) {
     //echo "Se cargo la clase:  ".$clase ;
     $directorys = array(
-        $_SESSION['ROOT'] . 'modelo/',
-        $_SESSION['ROOT'] . 'modelo/conector/',
-        $_SESSION['ROOT'] . 'control/1/',
-        $_SESSION['ROOT'] . 'control/2/',
-        $_SESSION['ROOT'] . 'control/3/',
-        $_SESSION['ROOT'] . 'control/4/',
-        $_SESSION['ROOT'] . 'control/5/',
-        //  $GLOBALS['ROOT'].'util/class/',
+        $GLOBALS['ROOT'] . 'modelo/',
+        $GLOBALS['ROOT'] . 'modelo/conector/',
+        $GLOBALS['ROOT'] . 'control/1/',
+        $GLOBALS['ROOT'] . 'control/2/',
+        $GLOBALS['ROOT'] . 'control/3/',
+        $GLOBALS['ROOT'] . 'control/4/',
+        $GLOBALS['ROOT'] . 'control/5/',
     );
     //print_r($directorys) ;
     foreach ($directorys as $directory) {
