@@ -1,6 +1,5 @@
 <?php
 include_once '../../../../configuracion.php';
-include_once '../../../../util/funciones.php';
 
 $datos = data_submitted();
 $abmUsuario = new AbmUsuario();

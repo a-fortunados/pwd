@@ -20,7 +20,8 @@ class Session
         $exito = false;
         if ($usuario != null && $pass != null) {
             $this->username = $usuario;
-            $this->password = md5($pass);
+            $this->password =  $pass; //md5($pass);
+            echo $this->password . "<br>";
             $exito = true;
         }
         return $exito;
@@ -42,8 +43,9 @@ class Session
                 if ($row['COUNT(*)'] != 0) {
                     $exito = true;
                     $_SESSION['username'] = $this->username;
-                    $_SESSION['password'] = $this->password;
+                    $_SESSION['password'] = md5($this->password);
                     $_SESSION['activa'] = true;
+                    echo $_SESSION['password'];
                 }
             }
         }
