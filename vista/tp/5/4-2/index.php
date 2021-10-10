@@ -29,26 +29,23 @@ if (isset($_GET['message'])) {
         </div>
     </div>
 
-    <h3 class="text-center">Member Login</h3>
-    <form id="tp5ej4-2" action="verificarLogin.php" method="post">
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="form-floating col-md-4 mb-3">
-                <input type="text" name="username" id="username" placeholder="Username" class="form-control" required>
-                <label for="username">Username</label>
+    <form class="form-signin" id="tp5ej4-2" name="tp5ej4-2" action="verificarLogin.php" method="post">
+        <div class="login container col-md-3">
+            <h1 class="h3 mb-3 text-center">Member Login</h1>
+            <div class="form-group">
+                <div class="input-group mt-3">
+                    <span class="input-group-text"> <i class="fa fa-user"></i></span>
+                    <input type="text" id="username" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="form-floating col-md-4 mb-3">
-                <input type="password" name="password" id="password" placeholder="Password" class="form-control" required>
-                <label for="password">Password</label>
+            <div class="form-group">
+                <div class="input-group mt-3">
+                    <span class="input-group-text"> <i class="fa fa-lock"></i></span>
+                    <input type="password" class="form-control" placeholder="Password" name="password" id="password" aria-label="password" aria-describedby="basic-addon1" required>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <button class="btn btn-block btn-success w-100 btn-lg" type="submit">Login</button>
+            <div class="d-grid mb-5 mt-3">
+                <button class="btn btn-success" type="submit">Login</button>
             </div>
         </div>
     </form>

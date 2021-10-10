@@ -12,11 +12,11 @@ if (!$sesion->activa()) {
 ?>
 <div class="container mt-3">
     <?php
-    echo "<h3 class='text-center'>BIENVENIDO {$_SESSION['username']}</h3>";
-    ?>
+echo "<h3 class='text-center'>BIENVENID@ {$_SESSION['username']}</h3>";
+?>
 
     <form action="cerrarSesion.php">
-        <button type="submit" id="cerrarSesion" value="cerrarSesion">CERRAR SESION</button>
+        <button class="btn btn-primary" type="submit" id="cerrarSesion" value="cerrarSesion">CERRAR SESION</button>
     </form>
 </div>
 

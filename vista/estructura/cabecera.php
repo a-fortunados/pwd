@@ -18,7 +18,7 @@
     <title><?php echo $titulo; ?></title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
     <header>
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">

@@ -18,19 +18,18 @@ include_once '../../../estructura/cabecera.php';
         </div>
     </div>
 
-    <!-- <h3 class="text-center">Member Login</h3> -->
     <form class="form-signin" id="eje3tp2" name="eje3tp2" action="verificaPass.php" method="post">
         <div class="login container col-md-3">
             <h1 class="h3 mb-3 text-center">Member Login</h1>
             <div class="form-group">
                 <div class="input-group mt-3">
-                    <span class="input-group-text"> <i class="fa fa-user"></i> </span>
+                    <span class="input-group-text"> <i class="fa fa-user"></i></span>
                     <input type="text" id="username" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" required>
                 </div>
             </div>
             <div class="form-group">
                 <div class="input-group mt-3">
-                    <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
+                    <span class="input-group-text"> <i class="fa fa-lock"></i></span>
                     <input type="password" class="form-control" placeholder="Password" name="password" id="password" aria-label="password" aria-describedby="basic-addon1" required>
                 </div>
             </div>
@@ -38,26 +37,6 @@ include_once '../../../estructura/cabecera.php';
                 <button class="btn btn-success" type="submit">Login</button>
             </div>
         </div>
-        <!-- <div class="row">
-            <div class="col-md-4"></div>
-            <div class="form-floating col-md-4 mb-3">
-                <input type="text" name="username" id="username" maxlength="15" placeholder="Username" class="form-control" required>
-                <label for="username">Username</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="form-floating col-md-4 mb-3">
-                <input type="password" name="password" id="password" maxlength="15" placeholder="Password" minlength="8" class="form-control" required>
-                <label for="password">Password</label>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4"></div>
-            <div class="col-md-4">
-                <button class="btn btn-block btn-success w-100 btn-lg" type="submit">Login</button>
-            </div>
-        </div> -->
     </form>
 </div>
 
