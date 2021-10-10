@@ -9,5 +9,6 @@ $sesion->iniciar($usuario['username'], $usuario['password']);
 if ($sesion->validar()) {
     header('Location: paginaSegura.php');
 } else {
-    header('Location: index.php');
+    $message = "Error en inicio de sesión";
+    header('Location: index.php?message=' . urlencode($message));
 }

@@ -24,3 +24,4 @@ if (!$sesion->activa()) {
 
 <?php
 include_once '../../../estructura/pie.php';
+?>
