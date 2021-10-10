@@ -8,11 +8,12 @@ $control = new control_ej4();
 $texto = $control->armadoString($_GET);
 ?>
 
-<div class="container-main">
-        <?php
-        echo $texto;
-        ?>
-</div>
+<div class="container">
 <?php
+echo $texto;
+?>
+</div>
 
+<?php
 include_once '../../../estructura/pie.php';
+?>

@@ -18,12 +18,11 @@ include_once '../../../estructura/cabecera.php';
                 </div>
             </div>
 
-            <form class="needs-validation" novalidate action="mostrarContenido.php" method="post" enctype="multipart/form-data" name="formulario1">
+            <form id="eje2tp3" name="eje2tp3" action="mostrarContenido.php" method="post" enctype="multipart/form-data" data-toggle="validator">
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="archivo">Seleccione un archivo</label>
                         <input type="file" name="archivo" id="archivo" accept=".txt" required>
-                        <div class="invalid-feedback">Por favor, subir un archivo!</div>
                     </div>
                 </div>
                 <button class="btn btn-primary" type="submit">Enviar</button>

@@ -9,12 +9,10 @@ $control = new control_ej7();
 $calculo = $control->realizarOperacion($_GET);
 ?>
 
-<div class="container-main">
-    <?php
-
-    echo $calculo;
-
-    ?>
+<div class="container">
+<?php
+echo $calculo;
+?>
 </div>
 
 <?php

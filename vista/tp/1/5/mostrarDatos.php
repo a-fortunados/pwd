@@ -9,13 +9,11 @@ $texto = $control->armadoDatos($_POST);
 $cadena = $control->armadoEstudios($_POST);
 ?>
 
-<div class="container-main">
-
-    <?php
-    echo "$texto<br>";
-    echo "<br>$cadena";
-    ?>
-
+<div class="container">
+<?php
+echo "$texto<br>";
+echo "<br>$cadena";
+?>
 </div>
 
 <?php

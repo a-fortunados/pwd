@@ -4,15 +4,16 @@ include_once '../../../estructura/cabecera.php';
 include '../../../../control/1/control_ej1.php';
 
 $control = new control_ej1();
-$texto = $control->readNumber($_GET);
+$texto = $control->readNumber($_POST);
 ?>
 
-<div class="container-main">
-    <?php
-    echo "<p>$texto</p>";
-    echo "<a href='index.php'>Consultar otro número</a><br/>";
-    ?>
+<div class="container">
+<?php
+echo "<p>$texto</p>";
+echo "<a href='index.php'>Consultar otro número</a><br/>";
+?>
 </div>
 
 <?php
 include_once '../../../estructura/pie.php';
+?>

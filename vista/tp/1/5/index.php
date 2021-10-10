@@ -19,56 +19,44 @@ include_once '../../../estructura/cabecera.php';
             </div>
         </div>
 
-        <form class="mb-3 needs-validation" novalidate id="form5" name="form5" method="post" action="mostrarDatos.php">
+        <form class="mb-3" id="eje5tp1" name="eje5tp1" method="post" action="mostrarDatos.php">
             <div class="col-md-4 mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" placeholder="Escriba su nombre completo" required>
-                <div class="valid-feedback">Campo completo</div>
-                <div class="invalid-feedback">Por favor, ingrese su nombre!</div>
+                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escriba su nombre completo" required>
             </div>
 
             <div class="col-md-4 mb-3">
                 <label for="apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" id="apellido" placeholder="Escriba todos sus apellidos" required>
-                <div class="valid-feedback">Campo completo</div>
-                <div class="invalid-feedback">Por favor, ingrese su apellido!</div>
+                <input type="text" class="form-control" id="apellido" name="apellido" placeholder="Escriba todos sus apellidos" required>
             </div>
 
             <div class="col-md-4 mb-3">
                 <label for="edad" class="form-label">Edad</label>
-                <input type="number" min="1" class="form-control" id="edad" placeholder="Ingrese su edad" required>
-                <div class="valid-feedback">Campo completo</div>
-                <div class="invalid-feedback">Por favor, ingrese su edad!</div>
+                <input type="number" min="1" class="form-control" id="edad" name="edad" placeholder="Ingrese su edad" required>
             </div>
 
             <div class="col-md-4 mb-3">
                 <label for="direccion" class="form-label">Dirección</label>
-                <input type="text" class="form-control" id="direccion" placeholder="Escriba su dirección" required>
-                <div class="valid-feedback">Campo completo</div>
-                <div class="invalid-feedback">Por favor, ingrese su dirección!</div>
+                <input type="text" class="form-control" id="direccion" name="direccion" placeholder="Escriba su dirección" required>
             </div>
 
             <div class="col-md-4 mb-3">
                 <label for="estudio">Nivel de estudio</label>
-                <select class="form-select" id="estudio" required>
+                <select class="form-select" id="estudio" name="estudio" required>
                     <option selected disabled value="">Seleccione...</option>
                     <option value="No tiene estudios">No tiene estudios</option>
                     <option value="Estudios primarios">Estudios primarios</option>
                     <option value="Estudios secundarios">Estudios secundarios</option>
                 </select>
-                <div class="valid-feedback">Campo completo</div>
-                <div class="invalid-feedback">Por favor, ingrese su nivel!</div>
             </div>
 
             <div class="col-md-4 mb-3">
                 <label for="sexo">Sexo</label>
-                <select class="form-select" id="sexo" required>
+                <select class="form-select" id="sexo" name="sexo" required>
                     <option selected disabled value="">Seleccione...</option>
                     <option value="Femenino">Femenino</option>
                     <option value="Masculino">Masculino</option>
                 </select>
-                <div class="valid-feedback">Campo completo</div>
-                <div class="invalid-feedback">Por favor, ingrese su sexo!</div>
             </div>
 
             <div class="col-md-12 mb-3">

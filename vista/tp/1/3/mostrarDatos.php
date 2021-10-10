@@ -8,10 +8,10 @@ include '../../../../control/1/control_ej3.php';
 $control = new control_ej3();
 $texto = $control->armadoString($_POST);
 ?>
-<div class="container-main">
-    <?php
-    echo $texto;
-    ?>
+<div class="container">
+<?php
+echo $texto;
+?>
 </div>
 
 <?php

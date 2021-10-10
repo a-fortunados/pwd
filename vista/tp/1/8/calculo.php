@@ -8,12 +8,9 @@ $control = new control_ej8();
 $precio = $control->calcularPrecio($_POST);
 ?>
 
-<div class="container-main">
-
-    <?php
-
+<div class="container">
+<?php
 echo "El precio es de: $" . $precio;
-
 ?>
 
 </div>
