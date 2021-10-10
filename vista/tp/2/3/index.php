@@ -34,8 +34,6 @@ include_once '../../../estructura/cabecera.php';
             <div class="form-floating col-md-4 mb-3">
                 <input type="password" name="password" id="password" maxlength="15" placeholder="Password" minlength="8" class="form-control" required>
                 <label for="password">Password</label>
-                <div class="valid-feedback">Look good!</div>
-                <div class="invalid-feedback">Please, enter your password!</div>
             </div>
         </div>
         <div class="row">

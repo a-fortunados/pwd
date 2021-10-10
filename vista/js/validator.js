@@ -1,5 +1,5 @@
 //EJERCICIO 1 - TP1
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje1tp1').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -319,5 +319,44 @@ $(document).ready(function() {
                 }
             }
         },
+    });
+});
+
+$(document).ready(function() {
+    $('#tp5ej4-2').bootstrapValidator({
+        message: 'Este valor no es valido',
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            username: {
+                validators: {
+                    notEmpty: {
+                        message: 'Debe ingresar un nombre de usuario'
+                    },
+                    regexp: {
+                        regexp: /^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$/,
+                        message: ''
+                    }
+                }
+            },
+            password: {
+                validators: {
+                    notEmpty: {
+                        message: 'Debe ingresar una contraseña'
+                    },
+                    regexp: {
+                        regexp: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/,
+                        message: 'Longitud minima de 8 caracteres. Al menos una mayúscula. Al menos una minúscula.'
+                    },
+                    different: {
+                        field: 'username',
+                        message: 'El nombre de usuario y la contraseña no pueden ser iguales'
+                    }
+                }
+            }
+        }
     });
 });

@@ -45,7 +45,6 @@ class Session
                     $_SESSION['username'] = $this->username;
                     $_SESSION['password'] = md5($this->password);
                     $_SESSION['activa'] = true;
-                    echo $_SESSION['password'];
                 }
             }
         }
