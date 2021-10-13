@@ -1,5 +1,5 @@
 //EJERCICIO 1 - TP1
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje1tp1').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -21,7 +21,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 2 - TP1
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje2tp1').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -155,7 +155,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 3 - TP1
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje3tp1').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -210,7 +210,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 4 - TP1
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje4tp1').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -265,7 +265,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 5 - TP1
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje5tp1').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -334,7 +334,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 6 - TP1
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje6tp1').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -403,7 +403,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 7 - TP1
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje7tp1').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -441,7 +441,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 8 - TP1
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje8tp1').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -471,7 +471,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 3 - TP2
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje3tp2').bootstrapValidator({
         message: 'Este valor no es valido',
 
@@ -511,7 +511,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 4 - TP2 Y EJERCICIO 3 - TP3
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje3tp3').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -552,7 +552,7 @@ $(document).ready(function () {
                     }
                 },
                 custom: {
-                    fileheight: function ($el) {
+                    fileheight: function($el) {
                         if ($el[0].files[0].height / ($el[0].files[0].width) > 1.5) {
                             return "Debe ser una relación de aspecto de 2/3";
                         }
@@ -617,7 +617,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 1 - TP3
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje1tp3').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -644,7 +644,7 @@ $(document).ready(function () {
 });
 
 //EJERCICIO 2 - TP3
-$(document).ready(function () {
+$(document).ready(function() {
     $('#eje2tp3').bootstrapValidator({
         message: 'Este valor no es valido',
         feedbackIcons: {
@@ -988,7 +988,7 @@ $(document).ready(function() {
                     },
                     regexp: {
                         regexp: /^(?=[a-zA-Z0-9._]{8,20}$)(?!.*[_.]{2})[^_.].*[^_.]$/,
-                        message: ''
+                        message: 'Longitud mínima de 8 caracteres. Al menos una mayúscula. Al menos una minúscula. Al menos un número'
                     }
                 }
             },
@@ -998,8 +998,8 @@ $(document).ready(function() {
                         message: 'Debe ingresar una contraseña'
                     },
                     regexp: {
-                        regexp: /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,}$/,
-                        message: ' Longitud minima de 8 caracteres. Al menos una mayúscula. Al menos una minúscula.\n'
+                        regexp: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
+                        message: ' Longitud minima de 8 caracteres. Al menos una mayúscula o minúscula.\n'
                     },
                     different: {
                         field: 'username',

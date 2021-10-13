@@ -48,10 +48,11 @@ CREATE TABLE `usuario` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 INSERT INTO `usuario` (`id_usuario`, `usuario_nombre`, `usuario_pass`, `usuario_email`, `usuario_deshabilitado`) VALUES 
-(1, 'juan.carlos', 'espiritu', 'hola.juancarlo@comoestas.com', 0),
-(2, 'pufufifufu', 'turing', 'santiago.scantamburlo@est.fi.uncoma.edu.ar', 0),
-(3, 'jmarcosg', 'EthBtc', 'juan.gonzalez@est.fi.uncoma.edu.ar', 0),
-(4, 'rociograff', 'chocotorta', 'rocio.graff@est.fi.uncoma.edu.ar', 0);
+(1, 'Juan.Carlos1', 'Espiritu123', 'hola.juancarlo@comoestas.com', 0),
+(2, 'Pufu.fifufu1', 'Turing123', 'santiago.scantamburlo@est.fi.uncoma.edu.ar', 0),
+(3, 'Jmarcos.g1', 'EthBtc123', 'juan.gonzalez@est.fi.uncoma.edu.ar', 0),
+(4, 'Rocio.graff1', 'Chocotorta123', 'rocio.graff@est.fi.uncoma.edu.ar', 0),
+(5, 'Cris.thian1', 'Autopartes123', 'cristhian.cantero@est.fi.uncoma.edu.ar', 0);
 
 -- --------------------------------------------------------
 
