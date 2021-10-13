@@ -5,7 +5,7 @@ $titulo = 'TP1 - EJ7';
 include_once '../../../estructura/cabecera.php';
 
 ?>
-<div class="container">
+<div class="container d-flex flex-column min-vh-100">
     <div>
         <div class="card bg-dark text-white rounded-3 mt-3 mb-3">
             <div class="card-body p-4">
