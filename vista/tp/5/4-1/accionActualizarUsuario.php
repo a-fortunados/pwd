@@ -7,7 +7,6 @@ $abmUsuario = new AbmUsuario();
 $usuarioBuscado = ['id_usuario' => $datos['id_usuario']];
 
 $listaUsuario = $abmUsuario->buscar($usuarioBuscado);
-print_r($listaUsuario);
 $objUsuario = $listaUsuario[0];
 
 $datos['usuario_deshabilitado'] = $objUsuario->getUsuarioDeshabilitado();

@@ -12,8 +12,8 @@ if (!$sesion->activa()) {
 ?>
 <div class="container mt-3">
     <?php
-echo "<h3 class='text-center'>BIENVENID@ {$_SESSION['username']}</h3>";
-?>
+    echo "<h3 class='text-center'>BIENVENID@ {$sesion->getUsernameSession()}</h3>";
+    ?>
 
     <form action="cerrarSesion.php">
         <button class="btn btn-primary" type="submit" id="cerrarSesion" value="cerrarSesion">CERRAR SESION</button>

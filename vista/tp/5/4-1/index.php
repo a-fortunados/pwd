@@ -4,6 +4,10 @@ include_once '../../../estructura/cabecera.php';
 
 $abmUsuario = new AbmUsuario();
 $lista = $abmUsuario->buscar(null);
+
+if (isset($_GET['message'])) {
+    print '<script type="text/javascript">alert("' . $_GET['message'] . '");</script>';
+}
 ?>
 
 <div class="container mt-3 d-flex flex-column min-vh-100">

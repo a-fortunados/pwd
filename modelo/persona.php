@@ -189,7 +189,7 @@ class persona
             }
         } else {
             $this->setMensajeOperacion("Tabla->listar: " . $base->getError());
-            echo $base->getError();
+            // echo $base->getError();
         }
         return $arreglo;
     }

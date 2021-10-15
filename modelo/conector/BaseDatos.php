@@ -197,16 +197,16 @@ class BaseDatos extends PDO
     /**
      * Esta funcion si esta seteado la variable instancia $this->debug visualiza el debug
      */
-    private function analizarDebug()
-    {
-        $e = $this->errorInfo();
-        $this->setError($e);
-        if ($this->getDebug()) {
-            echo "<pre>";
-            print_r($e);
-            echo "</pre>";
-        }
-    }
+    // private function analizarDebug()
+    // {
+    //     $e = $this->errorInfo();
+    //     $this->setError($e);
+    //     if ($this->getDebug()) {
+    //         echo "<pre>";
+    //         print_r($e);
+    //         echo "</pre>";
+    //     }
+    // }
 
     private function setIndice($valor)
     {
