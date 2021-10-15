@@ -123,7 +123,7 @@ class UsuarioRol
         $sql = " UPDATE usuario_rol SET ";
         $sql .= " id_rol = " . $this->getObjRol()->getIdRol();
         $sql .= " WHERE id_usuario =" . $this->getObjUsuario()->getIdUsuario();
-        echo $sql;
+        // echo $sql;
         if ($base->Iniciar()) {
             if ($base->Ejecutar($sql)) {
                 $resp = true;

@@ -7,6 +7,10 @@ $abmUsuario = new AbmUsuario();
 
 $listaUsuario = $abmUsuario->buscar($datos);
 $objUsuario = $listaUsuario[0];
+
+if (isset($_GET['message'])) {
+    print '<script type="text/javascript">alert("' . $_GET['message'] . '");</script>';
+}
 ?>
 
 <div class="container">
